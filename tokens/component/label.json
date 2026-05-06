@@ -1,0 +1,10 @@
+{
+  "Label": {
+    "Background": {
+      "default": {
+        "$type": "color",
+        "$value": "{color.primary.100}"
+      }
+    }
+  }
+}

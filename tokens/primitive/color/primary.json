@@ -1,0 +1,12 @@
+{
+  "primary": {
+    "50": {
+      "$type": "color",
+      "$value": "#f4f3ff"
+    },
+    "100": {
+      "$type": "color",
+      "$value": "#ebe9ff"
+    }
+  }
+}

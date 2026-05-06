@@ -1,0 +1,12 @@
+{
+  "background": {
+    "primary": {
+      "$type": "color",
+      "$value": "{color.gray.00}"
+    },
+    "secondary": {
+      "$type": "color",
+      "$value": "{color.gray.50}"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "border": {
+    "default": {
+      "$type": "color",
+      "$value": "{color.gray.500}"
+    },
+    "brand": {
+      "$type": "color",
+      "$value": "{color.primary.600}"
+    }
+  }
+}

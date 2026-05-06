@@ -1,0 +1,10 @@
+{
+  "body": {
+    "large": {
+      "$type": "typography"
+    },
+    "medium": {
+      "$type": "typography"
+    }
+  }
+}

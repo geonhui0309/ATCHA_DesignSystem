@@ -1,0 +1,12 @@
+{
+  "gray": {
+    "00": {
+      "$type": "color",
+      "$value": "#ffffff"
+    },
+    "50": {
+      "$type": "color",
+      "$value": "#f7f8fa"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "caption": {
+    "medium": {
+      "$type": "typography"
+    },
+    "small": {
+      "$type": "typography"
+    }
+  }
+}

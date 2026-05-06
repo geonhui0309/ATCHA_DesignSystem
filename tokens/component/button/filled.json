@@ -1,0 +1,25 @@
+{
+  "Filled": {
+    "Background": {
+      "default": {
+        "$type": "color",
+        "$value": "{color.background.surface.brand}"
+      },
+      "disabled": {
+        "$type": "color",
+        "$value": "{color.background.surface.disabled}"
+      }
+    },
+
+    "Text": {
+      "default": {
+        "$type": "color",
+        "$value": "{color.text.inverse}"
+      },
+      "disabled": {
+        "$type": "color",
+        "$value": "{color.text.disabled}"
+      }
+    }
+  }
+}

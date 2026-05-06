@@ -1,0 +1,10 @@
+{
+  "label": {
+    "large": {
+      "$type": "typography"
+    },
+    "medium": {
+      "$type": "typography"
+    }
+  }
+}

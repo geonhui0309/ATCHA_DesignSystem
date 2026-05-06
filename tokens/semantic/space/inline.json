@@ -1,0 +1,12 @@
+{
+  "inline": {
+    "large": {
+      "$type": "number",
+      "$value": "{spacing.16}"
+    },
+    "medium": {
+      "$type": "number",
+      "$value": "{spacing.12}"
+    }
+  }
+}

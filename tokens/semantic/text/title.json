@@ -1,0 +1,10 @@
+{
+  "title": {
+    "large": {
+      "$type": "typography"
+    },
+    "medium": {
+      "$type": "typography"
+    }
+  }
+}

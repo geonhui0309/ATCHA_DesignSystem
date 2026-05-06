@@ -1,0 +1,14 @@
+{
+  "icongraphy": {
+    "size": {
+      "small": {
+        "$type": "number",
+        "$value": 16
+      },
+      "medium": {
+        "$type": "number",
+        "$value": 20
+      }
+    }
+  }
+}

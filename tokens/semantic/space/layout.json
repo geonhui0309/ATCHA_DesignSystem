@@ -1,0 +1,12 @@
+{
+  "layout": {
+    "screen-padding-x": {
+      "$type": "number",
+      "$value": "{spacing.24}"
+    },
+    "screen-padding-y": {
+      "$type": "number",
+      "$value": "{spacing.24}"
+    }
+  }
+}

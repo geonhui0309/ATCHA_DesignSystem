@@ -1,0 +1,14 @@
+{
+  "size": {
+    "control": {
+      "large": {
+        "$type": "number",
+        "$value": "{size.11}"
+      },
+      "medium": {
+        "$type": "number",
+        "$value": "{size.10}"
+      }
+    }
+  }
+}
