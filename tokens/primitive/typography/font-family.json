@@ -1,0 +1,8 @@
+{
+  "fontFamilies": {
+    "asta-sans": {
+      "$type": "fontFamilies",
+      "$value": "Asta Sans"
+    }
+  }
+}

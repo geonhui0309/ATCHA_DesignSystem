@@ -1,12 +1,94 @@
 {
   "icon": {
     "primary": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "SHAPE_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
       "$type": "color",
-      "$value": "{color.text.primary}"
+      "$value": "{text.primary}"
     },
     "secondary": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "SHAPE_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
       "$type": "color",
-      "$value": "{color.text.secondary}"
+      "$value": "{text.secondary}"
+    },
+    "disabled": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "SHAPE_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "{text.disabled}"
+    },
+    "inverse": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "SHAPE_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "{text.inverse}"
+    },
+    "brand": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "SHAPE_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "{text.brand}"
+    },
+    "error": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "SHAPE_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "{text.error}"
+    },
+    "success": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "SHAPE_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "{text.success}"
+    },
+    "information": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "SHAPE_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "{text.information}"
+    },
+    "warning": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "SHAPE_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "color",
+      "$value": "{text.warning}"
     }
   }
 }

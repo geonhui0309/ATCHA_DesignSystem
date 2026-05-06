@@ -1,81 +1,74 @@
 {
-  "gray": {
+  "yellow": {
     "50": {
       "$extensions": {
         "com.figma.hiddenFromPublishing": false
       },
       "$type": "color",
-      "$value": "#f7f8fa"
+      "$value": "#fffde7"
     },
     "100": {
       "$extensions": {
         "com.figma.hiddenFromPublishing": false
       },
       "$type": "color",
-      "$value": "#edeef2"
+      "$value": "#fff9c3"
     },
     "200": {
       "$extensions": {
         "com.figma.hiddenFromPublishing": false
       },
       "$type": "color",
-      "$value": "#e0e1e6"
+      "$value": "#fff59a"
     },
     "300": {
       "$extensions": {
         "com.figma.hiddenFromPublishing": false
       },
       "$type": "color",
-      "$value": "#c7c9ce"
+      "$value": "#fff071"
     },
     "400": {
       "$extensions": {
         "com.figma.hiddenFromPublishing": false
       },
       "$type": "color",
-      "$value": "#a4a8ae"
+      "$value": "#feeb4e"
     },
     "500": {
       "$extensions": {
         "com.figma.hiddenFromPublishing": false
       },
       "$type": "color",
-      "$value": "#686a72"
+      "$value": "#fbe629"
     },
     "600": {
       "$extensions": {
         "com.figma.hiddenFromPublishing": false
       },
       "$type": "color",
-      "$value": "#44464e"
+      "$value": "#ffd92c"
     },
     "700": {
       "$extensions": {
         "com.figma.hiddenFromPublishing": false
       },
       "$type": "color",
-      "$value": "#313236"
+      "$value": "#ffc124"
     },
     "800": {
       "$extensions": {
         "com.figma.hiddenFromPublishing": false
       },
       "$type": "color",
-      "$value": "#1d1e21"
+      "$value": "#fea81c"
     },
     "900": {
       "$extensions": {
         "com.figma.hiddenFromPublishing": false
       },
       "$type": "color",
-      "$value": "#131417"
-    },
-    "00": {
-      "$extensions": {
-        "com.figma.hiddenFromPublishing": false
-      },
-      "$type": "color",
-      "$value": "#ffffff"
+      "$value": "#fb7e0c"
     }
   }
 }

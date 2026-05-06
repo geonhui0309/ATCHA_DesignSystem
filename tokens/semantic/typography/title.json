@@ -1,0 +1,31 @@
+{
+  "title": {
+    "large": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamilies.asta-sans}",
+        "fontWeight": "{fontWeights.asta-sans-0}",
+        "lineHeight": "{lineHeight.5}",
+        "fontSize": "{fontSize.5}"
+      }
+    },
+    "medium": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamilies.asta-sans}",
+        "fontWeight": "{fontWeights.asta-sans-0}",
+        "lineHeight": "{lineHeight.4}",
+        "fontSize": "{fontSize.4}"
+      }
+    },
+    "medium-strong": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamilies.asta-sans}",
+        "fontWeight": "{fontWeights.asta-sans-1}",
+        "lineHeight": "{lineHeight.4}",
+        "fontSize": "{fontSize.4}"
+      }
+    }
+  }
+}

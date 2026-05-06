@@ -1,54 +1,74 @@
 {
-  "inline": {
-    "xlarge": {
+  "lineHeight": {
+    "1": {
       "$extensions": {
         "com.figma.scopes": [
-          "ALL_SCOPES"
+          "LINE_HEIGHT"
         ],
         "com.figma.hiddenFromPublishing": false
       },
       "$type": "dimension",
-      "$value": "{spacing.24}"
+      "$value": 12
     },
-    "large": {
+    "2": {
       "$extensions": {
         "com.figma.scopes": [
-          "ALL_SCOPES"
+          "LINE_HEIGHT"
         ],
         "com.figma.hiddenFromPublishing": false
       },
       "$type": "dimension",
-      "$value": "{spacing.16}"
+      "$value": 16
     },
-    "medium": {
+    "3": {
       "$extensions": {
         "com.figma.scopes": [
-          "ALL_SCOPES"
+          "LINE_HEIGHT"
         ],
         "com.figma.hiddenFromPublishing": false
       },
       "$type": "dimension",
-      "$value": "{spacing.12}"
+      "$value": 20
     },
-    "small": {
+    "4": {
       "$extensions": {
         "com.figma.scopes": [
-          "ALL_SCOPES"
+          "LINE_HEIGHT"
         ],
         "com.figma.hiddenFromPublishing": false
       },
       "$type": "dimension",
-      "$value": "{spacing.8}"
+      "$value": 24
     },
-    "xsmall": {
+    "5": {
       "$extensions": {
         "com.figma.scopes": [
-          "ALL_SCOPES"
+          "LINE_HEIGHT"
         ],
         "com.figma.hiddenFromPublishing": false
       },
       "$type": "dimension",
-      "$value": "{spacing.4}"
+      "$value": 28
+    },
+    "6": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "LINE_HEIGHT"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "dimension",
+      "$value": 30
+    },
+    "7": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "LINE_HEIGHT"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "dimension",
+      "$value": 32
     }
   }
 }

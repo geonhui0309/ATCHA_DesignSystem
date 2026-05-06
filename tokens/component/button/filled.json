@@ -2,23 +2,47 @@
   "Filled": {
     "Background": {
       "default": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
         "$type": "color",
-        "$value": "{color.background.surface.brand}"
+        "$value": "{background.surface.brand}"
       },
       "disabled": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
         "$type": "color",
-        "$value": "{color.background.surface.disabled}"
+        "$value": "{background.surface.disabled}"
       }
     },
 
     "Text": {
       "default": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
         "$type": "color",
-        "$value": "{color.text.inverse}"
+        "$value": "{text.inverse}"
       },
       "disabled": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
         "$type": "color",
-        "$value": "{color.text.disabled}"
+        "$value": "{text.disabled}"
       }
     }
   }

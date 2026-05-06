@@ -1,81 +1,74 @@
 {
-  "gray": {
+  "blue": {
     "50": {
       "$extensions": {
         "com.figma.hiddenFromPublishing": false
       },
       "$type": "color",
-      "$value": "#f7f8fa"
+      "$value": "#e2f4ff"
     },
     "100": {
       "$extensions": {
         "com.figma.hiddenFromPublishing": false
       },
       "$type": "color",
-      "$value": "#edeef2"
+      "$value": "#bae2ff"
     },
     "200": {
       "$extensions": {
         "com.figma.hiddenFromPublishing": false
       },
       "$type": "color",
-      "$value": "#e0e1e6"
+      "$value": "#88d0ff"
     },
     "300": {
       "$extensions": {
         "com.figma.hiddenFromPublishing": false
       },
       "$type": "color",
-      "$value": "#c7c9ce"
+      "$value": "#46bdff"
     },
     "400": {
       "$extensions": {
         "com.figma.hiddenFromPublishing": false
       },
       "$type": "color",
-      "$value": "#a4a8ae"
+      "$value": "#00adff"
     },
     "500": {
       "$extensions": {
         "com.figma.hiddenFromPublishing": false
       },
       "$type": "color",
-      "$value": "#686a72"
+      "$value": "#009dff"
     },
     "600": {
       "$extensions": {
         "com.figma.hiddenFromPublishing": false
       },
       "$type": "color",
-      "$value": "#44464e"
+      "$value": "#008eff"
     },
     "700": {
       "$extensions": {
         "com.figma.hiddenFromPublishing": false
       },
       "$type": "color",
-      "$value": "#313236"
+      "$value": "#0079ff"
     },
     "800": {
       "$extensions": {
         "com.figma.hiddenFromPublishing": false
       },
       "$type": "color",
-      "$value": "#1d1e21"
+      "$value": "#0066ff"
     },
     "900": {
       "$extensions": {
         "com.figma.hiddenFromPublishing": false
       },
       "$type": "color",
-      "$value": "#131417"
-    },
-    "00": {
-      "$extensions": {
-        "com.figma.hiddenFromPublishing": false
-      },
-      "$type": "color",
-      "$value": "#ffffff"
+      "$value": "#2341e0"
     }
   }
 }

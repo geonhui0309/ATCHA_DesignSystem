@@ -1,44 +1,34 @@
 {
-  "gap": {
-    "xlarge": {
+  "interaction": {
+    "hover": {
       "$extensions": {
         "com.figma.scopes": [
           "ALL_SCOPES"
         ],
         "com.figma.hiddenFromPublishing": false
       },
-      "$type": "dimension",
-      "$value": "{spacing.24}"
+      "$type": "color",
+      "$value": "{gray.100}"
     },
-    "large": {
+    "pressed": {
       "$extensions": {
         "com.figma.scopes": [
           "ALL_SCOPES"
         ],
         "com.figma.hiddenFromPublishing": false
       },
-      "$type": "dimension",
-      "$value": "{spacing.16}"
+      "$type": "color",
+      "$value": "{overlay.light}"
     },
-    "medium": {
+    "focused": {
       "$extensions": {
         "com.figma.scopes": [
           "ALL_SCOPES"
         ],
         "com.figma.hiddenFromPublishing": false
       },
-      "$type": "dimension",
-      "$value": "{spacing.12}"
-    },
-    "small": {
-      "$extensions": {
-        "com.figma.scopes": [
-          "ALL_SCOPES"
-        ],
-        "com.figma.hiddenFromPublishing": false
-      },
-      "$type": "dimension",
-      "$value": "{spacing.8}"
+      "$type": "color",
+      "$value": "{gray.300}"
     }
   }
 }

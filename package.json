@@ -1,0 +1,25 @@
+{
+  "name": "atcha_designsystem",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:tokens": "style-dictionary build --config style-dictionary.config.js && node scripts/generate-nested-tokens.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geonhui0309/ATCHA_DesignSystem.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/geonhui0309/ATCHA_DesignSystem/issues"
+  },
+  "homepage": "https://github.com/geonhui0309/ATCHA_DesignSystem#readme",
+  "dependencies": {
+    "style-dictionary": "^5.4.0"
+  }
+}

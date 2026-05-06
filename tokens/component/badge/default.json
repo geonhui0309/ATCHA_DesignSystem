@@ -1,0 +1,26 @@
+{
+  "Badge": {
+    "Background": {
+      "information": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "$type": "color",
+        "$value": "{blue.800}"
+      },
+      "Dot": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "$type": "color",
+        "$value": "{red.600}"
+      }
+    }
+  }
+}

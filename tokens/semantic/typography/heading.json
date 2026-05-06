@@ -1,0 +1,22 @@
+{
+  "heading": {
+    "xlarge": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamilies.asta-sans}",
+        "fontWeight": "{fontWeights.asta-sans-0}",
+        "lineHeight": "{lineHeight.7}",
+        "fontSize": "{fontSize.7}"
+      }
+    },
+    "large": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamilies.asta-sans}",
+        "fontWeight": "{fontWeights.asta-sans-0}",
+        "lineHeight": "{lineHeight.6}",
+        "fontSize": "{fontSize.6}"
+      }
+    }
+  }
+}

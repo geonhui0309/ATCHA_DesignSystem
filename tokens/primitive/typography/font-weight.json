@@ -1,0 +1,20 @@
+{
+  "fontWeights": {
+    "asta-sans-0": {
+      "$type": "fontWeights",
+      "$value": "Bold"
+    },
+    "asta-sans-1": {
+      "$type": "fontWeights",
+      "$value": "SemiBold"
+    },
+    "asta-sans-2": {
+      "$type": "fontWeights",
+      "$value": "Medium"
+    },
+    "asta-sans-3": {
+      "$type": "fontWeights",
+      "$value": "Regular"
+    }
+  }
+}

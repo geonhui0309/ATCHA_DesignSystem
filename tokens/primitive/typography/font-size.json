@@ -1,0 +1,36 @@
+{
+  "fontSize": {
+    "0": {
+      "$type": "fontSizes",
+      "$value": 10
+    },
+    "1": {
+      "$type": "fontSizes",
+      "$value": 12
+    },
+    "2": {
+      "$type": "fontSizes",
+      "$value": 14
+    },
+    "3": {
+      "$type": "fontSizes",
+      "$value": 16
+    },
+    "4": {
+      "$type": "fontSizes",
+      "$value": 18
+    },
+    "5": {
+      "$type": "fontSizes",
+      "$value": 20
+    },
+    "6": {
+      "$type": "fontSizes",
+      "$value": 22
+    },
+    "7": {
+      "$type": "fontSizes",
+      "$value": 24
+    }
+  }
+}
