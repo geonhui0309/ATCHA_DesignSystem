@@ -1,4 +1,4 @@
-export type IconFamily = "system" | "vehicle" | "vehicle-warning" | "status";
+export type IconFamily = "system" | "vehicle" | "vehicle-warning" | "authority" | "status";
 
 export type SystemIconName =
   | "add"
@@ -30,6 +30,14 @@ export type SystemIconName =
   | "arrow-down-narrow"
   | "list";
 
+export type AuthorityIconName =
+  | "authority-camera"
+  | "authority-notification"
+  | "authority-calender"
+  | "authority-images"
+  | "authority-contact"
+  | "authority-location";
+
 export type VehicleIconName =
   | "engine-oil"
   | "tire-replacement"
@@ -42,7 +50,7 @@ export type VehicleIconName =
   | "air-filter"
   | "oil-filter";
 
-export type IconName = SystemIconName | VehicleIconName;
+export type IconName = SystemIconName | VehicleIconName | AuthorityIconName;
 
 export interface InlinePathDefinition {
   d: string;

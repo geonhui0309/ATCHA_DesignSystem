@@ -2,6 +2,12 @@ import type { IconDefinition, IconName } from "./Icon.types";
 
 import airconFilterIcon from "./assets/vehicle/aircon-filter.svg";
 import addIcon from "./assets/system/add.svg";
+import authorityCalenderIcon from "./assets/Authority/calender.svg";
+import authorityCameraIcon from "./assets/Authority/camera.svg";
+import authorityContactIcon from "./assets/Authority/contact.svg";
+import authorityImagesIcon from "./assets/Authority/images.svg";
+import authorityLocationIcon from "./assets/Authority/location.svg";
+import authorityNotificationIcon from "./assets/Authority/notification.svg";
 import airFilterIcon from "./assets/vehicle/air-filter.svg";
 import arrowDownNarrowIcon from "./assets/system/arrow-down-narrow.svg";
 import arrowLeftNarrowIcon from "./assets/system/arrow-left-narrow.svg";
@@ -68,6 +74,12 @@ export const iconRegistry: Record<IconName, IconDefinition> = {
   "arrow-up-narrow": { family: "system", kind: "asset", src: arrowUpNarrowIcon },
   "arrow-down-narrow": { family: "system", kind: "asset", src: arrowDownNarrowIcon },
   list: { family: "system", kind: "asset", src: listIcon },
+  "authority-camera": { family: "authority", kind: "asset", src: authorityCameraIcon },
+  "authority-notification": { family: "authority", kind: "asset", src: authorityNotificationIcon },
+  "authority-calender": { family: "authority", kind: "asset", src: authorityCalenderIcon },
+  "authority-images": { family: "authority", kind: "asset", src: authorityImagesIcon },
+  "authority-contact": { family: "authority", kind: "asset", src: authorityContactIcon },
+  "authority-location": { family: "authority", kind: "asset", src: authorityLocationIcon },
   "engine-oil": { family: "vehicle", kind: "asset", src: engineOilIcon },
   "tire-replacement": { family: "vehicle", kind: "asset", src: tireReplacementIcon },
   "exterior-repair": { family: "vehicle", kind: "asset", src: exteriorRepairIcon },
