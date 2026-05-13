@@ -3,30 +3,13 @@
   align-items: center;
   justify-content: center;
   flex: 0 0 auto;
-  color: var(--icon-primary);
+  color: currentColor;
 }
 
 .ds-icon svg {
   display: block;
   width: 100%;
   height: 100%;
-}
-
-.ds-icon__markup {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.ds-icon__markup svg {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.ds-icon__markup svg * {
-  fill: currentColor !important;
-  stroke: currentColor !important;
 }
 
 .ds-icon__asset {

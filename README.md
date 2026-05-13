@@ -38,10 +38,6 @@ components/
 │   ├── InputField.tsx
 │   ├── input-field.css
 │   └── input-field.tokens.ts
-├── label/
-│   ├── Label.tsx
-│   ├── label.css
-│   └── label.tokens.ts
 ├── navigation-bar/
 │   ├── NavigationBar.tsx
 │   ├── navigation-bar.css
@@ -78,8 +74,7 @@ tokens/
 │   ├── size.json
 │   └── typography/
 └── component/
-    ├── button/
-    └── label/
+    └── button/
 ```
 
 ## Install
@@ -120,7 +115,7 @@ const space16 = tokens.spacing["16"];
 - `components/` is the implementation layer that consumes generated design tokens.
 - Components are now authored in `tsx` as the source of truth for web usage.
 - Preview-only HTML and DOM builder files are kept out of component folders so each component has a single implementation path.
-- `components/button/` and `components/label/` are token-connected primitives built from the current component token set.
+- `components/button/` is a token-connected primitive built from the current component token set.
 - `components/input-field/` and `components/checkbox/` are semantic-token-based web primitives added as the next layer while dedicated component tokens are still being defined.
 - `components/global-navigation-bar/` is connected from the Figma node `309:630` with Figma-derived sizing and remote icon assets.
 - `components/navigation-bar/`, `components/record-tab/`, `components/icon-button/`, and `components/radio-button/` are connected from Figma nodes `180:563`, `611:350`, `682:1806`, and `412:1124`.

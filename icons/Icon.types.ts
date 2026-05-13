@@ -24,8 +24,6 @@ export type SystemIconName =
   | "in-progress"
   | "notification-cancel"
   | "eye"
-  | "error"
-  | "close-solid"
   | "arrow-left-narrow"
   | "arrow-right-narrow"
   | "arrow-up-narrow"
@@ -64,7 +62,6 @@ export interface AssetIconDefinition {
   family: IconFamily;
   kind: "asset";
   src: string;
-  markup?: string;
 }
 
 export type IconDefinition = InlineIconDefinition | AssetIconDefinition;

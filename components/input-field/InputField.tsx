@@ -16,7 +16,6 @@ export type InputFieldIconName =
   | "cancelMuted"
   | "success"
   | "error"
-  | "closeSolid"
   | "search";
 
 const INPUT_FIELD_LOCAL_ICON_NAME: Record<InputFieldIconName, IconName> = {
@@ -26,8 +25,7 @@ const INPUT_FIELD_LOCAL_ICON_NAME: Record<InputFieldIconName, IconName> = {
   cancel: "cancel",
   cancelMuted: "cancel",
   success: "check",
-  error: "error",
-  closeSolid: "close-solid"
+  error: "notification-alert"
 };
 
 export interface InputFieldProps

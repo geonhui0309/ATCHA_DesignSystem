@@ -34,7 +34,9 @@ export function RadioButton({
       data-selected={selected ? "true" : undefined}
       data-state={state}
     >
-      <span className="ds-radio-button__control" aria-hidden="true" />
+      <span className="ds-radio-button__control" aria-hidden="true">
+        <span className="ds-radio-button__dot" />
+      </span>
     </span>
   );
 }

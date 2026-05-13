@@ -1,8 +1,14 @@
 import coolantAsset from "../../icons/assets/vehicle/coolant.svg";
 import engineOilAsset from "../../icons/assets/vehicle/engine-oil.svg";
+import vehicleWarning0Asset from "../../icons/assets/vehicle-warning/image_0.png";
+import vehicleWarning1Asset from "../../icons/assets/vehicle-warning/image_1.png";
+import vehicleWarning2Asset from "../../icons/assets/vehicle-warning/image_2.png";
+import vehicleWarning3Asset from "../../icons/assets/vehicle-warning/image_3.png";
+import vehicleWarning4Asset from "../../icons/assets/vehicle-warning/image_4.png";
 import notificationAlertAsset from "../../icons/assets/system/notification-alert.svg";
 import notificationCancelAsset from "../../icons/assets/system/notification-cancel.svg";
 import notificationCheckAsset from "../../icons/assets/system/notification-check.svg";
+import vehicleImageAsset from "./images/vehicle-image.png";
 import tireReplacementAsset from "../../icons/assets/vehicle/tire-replacement.svg";
 import washerFluidAsset from "../../icons/assets/vehicle/washer-fluid.svg";
 import wiperAsset from "../../icons/assets/vehicle/wiper.svg";
@@ -19,15 +25,7 @@ export const atchaLogoAsset = svgDataUri(
   `<svg xmlns="http://www.w3.org/2000/svg" width="79" height="19" viewBox="0 0 79 19" fill="none"><text x="0" y="14" fill="#111111" font-family="Asta Sans, Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="0.3">ATCHA</text></svg>`
 );
 
-export const placeholderVehicleAsset = svgDataUri(
-  `<svg xmlns="http://www.w3.org/2000/svg" width="152" height="84" viewBox="0 0 152 84" fill="none">
-    <rect width="152" height="84" rx="12" fill="#F3F4F7"/>
-    <path d="M40 50.5h4.5l4.6-12.1c1-2.6 3.5-4.4 6.3-4.4h33.2c2.8 0 5.3 1.8 6.3 4.4l4.6 12.1H104c4.4 0 8 3.6 8 8v2.5H40V58.5c0-4.4 3.6-8 8-8Z" fill="#D5D9E1"/>
-    <rect x="55" y="39" width="34" height="11" rx="5.5" fill="#EEF1F5"/>
-    <circle cx="58.5" cy="61.5" r="6.5" fill="#A5ACB8"/>
-    <circle cx="93.5" cy="61.5" r="6.5" fill="#A5ACB8"/>
-  </svg>`
-);
+export const placeholderVehicleAsset = vehicleImageAsset;
 
 export const authorityAsset = svgDataUri(
   `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -38,7 +36,7 @@ export const authorityAsset = svgDataUri(
   </svg>`
 );
 
-export const statusWarningAsset = notificationAlertAsset;
+export const statusWarningAsset = vehicleWarning0Asset;
 export const statusCompleteAsset = notificationCheckAsset;
 export const statusWrongAsset = notificationCancelAsset;
 export const thumbnailItemAsset = svgDataUri(
@@ -86,9 +84,9 @@ export const bannerProgressAsset = svgDataUri(
 );
 
 export const vehicleWarningAssets = [
-  engineOilAsset,
-  coolantAsset,
-  washerFluidAsset,
-  wiperAsset,
-  tireReplacementAsset
+  vehicleWarning0Asset,
+  vehicleWarning1Asset,
+  vehicleWarning2Asset,
+  vehicleWarning3Asset,
+  vehicleWarning4Asset
 ] as const;

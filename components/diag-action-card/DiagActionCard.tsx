@@ -7,10 +7,15 @@ import "./diag-action-card.css";
 
 const vehicleImage = placeholderVehicleAsset;
 
+export interface DiagActionCardProps extends HTMLAttributes<HTMLDivElement> {
+  imageSrc?: string;
+}
+
 export function DiagActionCard({
+  imageSrc = vehicleImage,
   className,
   ...rest
-}: HTMLAttributes<HTMLDivElement>) {
+}: DiagActionCardProps) {
   return (
     <section {...rest} className={cx("ds-diag-action-card", className)}>
       <div className="ds-diag-action-card__content">
@@ -19,7 +24,7 @@ export function DiagActionCard({
           완료된 차량 진단은 이력에서 확인 가능합니다
         </span>
       </div>
-      <img className="ds-diag-action-card__image" src={vehicleImage} alt="" />
+      <img className="ds-diag-action-card__image" src={imageSrc} alt="" />
       <Button variant="filled" size="xlarge" state="disabled">
         진단 결과 확인
       </Button>

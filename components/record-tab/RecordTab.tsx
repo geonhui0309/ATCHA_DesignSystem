@@ -53,7 +53,7 @@ export function RecordTab({
         </div>
         <div className="ds-record-tab__filter">
           <span className="ds-record-tab__filter-label">{filterLabel}</span>
-          <Icon className="ds-record-tab__filter-icon" name="list" size={16} />
+          <Icon className="ds-record-tab__filter-icon" name="arrow-down-narrow" size={16} />
         </div>
       </div>
       <img className="ds-record-tab__divider" src={DIVIDER_ASSET} alt="" />

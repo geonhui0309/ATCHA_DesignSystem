@@ -45,6 +45,16 @@
   display: block;
 }
 
+.ds-global-navigation-bar__icon--inline {
+  color: inherit;
+}
+
+.ds-global-navigation-bar__icon--inline svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .ds-global-navigation-bar__item[data-state="active"] .ds-global-navigation-bar__icon-slot {
   color: var(--icon-brand);
 }

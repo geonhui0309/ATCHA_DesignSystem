@@ -17,7 +17,6 @@ export function Icon({
   const icon = iconRegistry[name];
   const resolvedWidth = width ?? size;
   const resolvedHeight = height ?? size;
-  const tintableAssetMarkup = icon.kind === "asset" && icon.family === "system" ? icon.markup : undefined;
 
   return (
     <span
@@ -38,11 +37,6 @@ export function Icon({
             />
           ))}
         </svg>
-      ) : tintableAssetMarkup ? (
-        <span
-          className="ds-icon__markup"
-          dangerouslySetInnerHTML={{ __html: tintableAssetMarkup }}
-        />
       ) : (
         <img className="ds-icon__asset" src={icon.src} alt="" />
       )}

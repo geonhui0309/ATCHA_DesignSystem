@@ -69,9 +69,6 @@ export type { IconProps } from "../icons/Icon.types";
 export { IconButton } from "./icon-button/IconButton";
 export type { IconButtonProps } from "./icon-button/IconButton";
 
-export { Label } from "./label/Label";
-export type { LabelProps } from "./label/Label";
-
 export { MaintenanceSummaryCard } from "./maintenance-summary-card/MaintenanceSummaryCard";
 export type {
   MaintenanceSummaryCardProps

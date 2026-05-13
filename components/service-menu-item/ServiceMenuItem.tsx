@@ -1,29 +1,31 @@
 import type { HTMLAttributes } from "react";
 
-import { Icon } from "../../icons/Icon";
-import type { VehicleIconName } from "../../icons/Icon.types";
 import { cx } from "../shared/foundation";
+import engineOilIconMarkup from "../../icons/assets/vehicle/engine-oil.svg?raw";
+import exteriorRepairIconMarkup from "../../icons/assets/vehicle/exterior-repair.svg?raw";
+import tireReplacementIconMarkup from "../../icons/assets/vehicle/tire-replacement.svg?raw";
+import vehicleMaintenanceIconMarkup from "../../icons/assets/vehicle/vehicle-maintenance.svg?raw";
 import "./service-menu-item.css";
 
 const MENU_ITEM_CONFIG = {
   "engine-oil": {
-    iconName: "engine-oil",
+    iconMarkup: engineOilIconMarkup,
     label: "엔진오일"
   },
   "tire": {
-    iconName: "tire-replacement",
+    iconMarkup: tireReplacementIconMarkup,
     label: "타이어 교체"
   },
   "exterior-repair": {
-    iconName: "exterior-repair",
+    iconMarkup: exteriorRepairIconMarkup,
     label: "외관 수리",
     flipped: true
   },
   "vehicle-maintenance": {
-    iconName: "vehicle-maintenance",
+    iconMarkup: vehicleMaintenanceIconMarkup,
     label: "차량 정비"
   }
-} satisfies Record<string, { iconName: VehicleIconName; label: string; flipped?: boolean }>;
+} satisfies Record<string, { iconMarkup: string; label: string; flipped?: boolean }>;
 
 export type ServiceMenuItemCategory =
   | "engine-oil"
@@ -33,6 +35,14 @@ export type ServiceMenuItemCategory =
 
 export interface ServiceMenuItemProps extends HTMLAttributes<HTMLDivElement> {
   category?: ServiceMenuItemCategory;
+}
+
+function toBrandIconSvg(markup: string) {
+  return markup
+    .replace(/fill="var\(--fill-[^)]*\)"/g, 'fill="currentColor"')
+    .replace(/stroke="var\(--stroke-[^)]*\)"/g, 'stroke="currentColor"')
+    .replace(/fill="#[0-9A-Fa-f]{3,8}"/g, 'fill="currentColor"')
+    .replace(/stroke="#[0-9A-Fa-f]{3,8}"/g, 'stroke="currentColor"');
 }
 
 export function ServiceMenuItem({
@@ -50,11 +60,10 @@ export function ServiceMenuItem({
     >
       <span className="ds-service-menu-item__icon-frame">
         <span className="ds-service-menu-item__icon-inner">
-          <Icon
+          <span
             className="ds-service-menu-item__icon"
-            name={item.iconName}
-            width={48}
-            height={48}
+            aria-hidden="true"
+            dangerouslySetInnerHTML={{ __html: toBrandIconSvg(item.iconMarkup) }}
           />
         </span>
       </span>

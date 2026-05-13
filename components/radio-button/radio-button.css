@@ -8,21 +8,42 @@
 }
 
 .ds-radio-button__control {
-  display: block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 20px;
   height: 20px;
   box-sizing: border-box;
-  border: 1.5px solid var(--border-primary);
+  border: 1.5px solid var(--border-default);
   border-radius: 999px;
   background: var(--background-surface-primary);
 }
 
-.ds-radio-button[data-state="disabled"] .ds-radio-button__control {
-  border-color: var(--border-disabled);
-  background: var(--background-surface-disabled, #f2f3f6);
+.ds-radio-button__dot {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: transparent;
 }
 
 .ds-radio-button[data-selected="true"] .ds-radio-button__control {
-  border-width: 6px;
-  border-color: var(--interaction-brand-default);
+  border-color: var(--border-brand);
+}
+
+.ds-radio-button[data-selected="true"] .ds-radio-button__dot {
+  background: var(--background-surface-brand);
+}
+
+.ds-radio-button[data-state="pressed"][data-selected="true"] .ds-radio-button__control,
+.ds-radio-button[data-state="pressed"]:not([data-selected="true"]) .ds-radio-button__control {
+  border-color: var(--border-brand);
+}
+
+.ds-radio-button[data-state="disabled"] .ds-radio-button__control {
+  border-color: var(--border-disabled);
+}
+
+.ds-radio-button[data-state="disabled"][data-selected="true"] .ds-radio-button__dot {
+  background: var(--background-surface-disabled);
 }
