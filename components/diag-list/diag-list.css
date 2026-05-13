@@ -1,0 +1,4 @@
+.ds-diag-list {
+  display: flex;
+  flex-direction: column;
+}

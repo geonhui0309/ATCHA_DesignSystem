@@ -1,0 +1,120 @@
+.ds-diag-report-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-16);
+  width: 360px;
+  padding: var(--spacing-8) var(--spacing-24);
+  background: var(--background-surface-primary);
+}
+
+.ds-diag-report-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  color: var(--text-primary);
+  font-family: var(--font-families-asta-sans), sans-serif;
+  font-size: var(--font-size-3);
+  line-height: var(--line-height-3);
+}
+
+.ds-diag-report-card__header-title {
+  font-weight: 600;
+}
+
+.ds-diag-report-card__header-date {
+  font-weight: 700;
+}
+
+.ds-diag-report-card__summary {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: flex-end;
+  width: 100%;
+  height: 164px;
+}
+
+.ds-diag-report-card__summary-top {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.ds-diag-report-card__summary-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.ds-diag-report-card__problem-count {
+  color: var(--text-primary);
+  font-family: var(--font-families-asta-sans), sans-serif;
+  font-size: var(--font-size-7);
+  font-weight: 700;
+  line-height: var(--line-height-7);
+}
+
+.ds-diag-report-card__status-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.ds-diag-report-card__summary-copy {
+  color: var(--text-secondary);
+  font-family: var(--font-families-asta-sans), sans-serif;
+  font-size: var(--font-size-1);
+  font-weight: 700;
+  line-height: var(--line-height-2);
+}
+
+.ds-diag-report-card__vehicle-image {
+  width: 152px;
+  height: 76px;
+  object-fit: cover;
+}
+
+.ds-diag-report-card__stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  height: 68px;
+  padding-inline: 24px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.ds-diag-report-card__stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+  width: 46px;
+  text-align: center;
+}
+
+.ds-diag-report-card__stat-count {
+  color: var(--text-primary);
+  font-family: var(--font-families-asta-sans), sans-serif;
+  font-size: var(--font-size-7);
+  font-weight: 700;
+  line-height: var(--line-height-7);
+}
+
+.ds-diag-report-card__stat-label {
+  color: var(--text-primary);
+  font-family: var(--font-families-asta-sans), sans-serif;
+  font-size: var(--font-size-1);
+  font-weight: 400;
+  line-height: var(--line-height-2);
+}
+
+.ds-diag-report-card__stat-divider {
+  width: 1px;
+  height: 52px;
+  object-fit: cover;
+}

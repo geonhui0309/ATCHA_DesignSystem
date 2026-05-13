@@ -1,0 +1,5 @@
+.ds-input-field-with-button {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-8);
+}

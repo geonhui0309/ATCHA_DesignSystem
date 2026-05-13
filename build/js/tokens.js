@@ -97,14 +97,6 @@ export const tokens = {
     "800": "#fea81c",
     "900": "#fb7e0c"
   },
-  "icongraphy": {
-    "size": {
-      "small": "16px",
-      "medium": "20px",
-      "large": "24px",
-      "xlarge": "48px"
-    }
-  },
   "radius": {
     "none": 0,
     "xsmall": "2px",
@@ -116,6 +108,7 @@ export const tokens = {
   },
   "size": {
     "4": "16px",
+    "5": "20px",
     "6": "24px",
     "8": "32px",
     "10": "40px",
@@ -128,6 +121,11 @@ export const tokens = {
       "large": "44px",
       "medium": "40px",
       "small": "32px"
+    },
+    "icon": {
+      "small": "16px",
+      "medium": "20px",
+      "large": "24px"
     }
   },
   "spacing": {

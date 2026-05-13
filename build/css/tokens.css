@@ -71,10 +71,6 @@
   --yellow-700: #ffc124;
   --yellow-800: #fea81c;
   --yellow-900: #fb7e0c;
-  --icongraphy-size-small: 16px;
-  --icongraphy-size-medium: 20px;
-  --icongraphy-size-large: 24px;
-  --icongraphy-size-xlarge: 48px;
   --radius-none: 0;
   --radius-xsmall: 2px;
   --radius-small: 4px;
@@ -83,6 +79,7 @@
   --radius-xlarge: 16px;
   --radius-full: 999px;
   --size-4: 16px;
+  --size-5: 20px;
   --size-6: 24px;
   --size-8: 32px;
   --size-10: 40px;
@@ -94,6 +91,9 @@
   --size-control-large: 44px;
   --size-control-medium: 40px;
   --size-control-small: 32px;
+  --size-icon-small: 16px;
+  --size-icon-medium: 20px;
+  --size-icon-large: 24px;
   --spacing-0: 0;
   --spacing-2: 2px;
   --spacing-4: 4px;

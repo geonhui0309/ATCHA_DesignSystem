@@ -1,0 +1,90 @@
+.ds-record-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 360px;
+  height: 48px;
+  padding: var(--spacing-8) var(--spacing-16) var(--spacing-8) var(--spacing-24);
+  background: var(--background-surface-primary);
+}
+
+.ds-record-tab__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.ds-record-tab__list {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-16);
+}
+
+.ds-record-tab__tab {
+  position: relative;
+  width: 52px;
+  height: 28px;
+}
+
+.ds-record-tab__tab-label {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--text-secondary);
+  font-family: var(--font-families-asta-sans), sans-serif;
+  font-size: var(--font-size-2);
+  font-weight: 600;
+  line-height: var(--line-height-3);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.ds-record-tab__tab[data-active="true"] .ds-record-tab__tab-label {
+  color: var(--text-brand);
+}
+
+.ds-record-tab__indicator {
+  position: absolute;
+  left: 0;
+  top: 28px;
+  width: 52px;
+  height: 2px;
+  background: transparent;
+}
+
+.ds-record-tab__tab[data-active="true"] .ds-record-tab__indicator {
+  background: var(--border-brand);
+}
+
+.ds-record-tab__filter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-2);
+  height: 32px;
+  padding: var(--spacing-8);
+}
+
+.ds-record-tab__filter-label {
+  color: var(--text-primary);
+  font-family: var(--font-families-asta-sans), sans-serif;
+  font-size: var(--font-size-1);
+  font-weight: 600;
+  line-height: var(--line-height-2);
+  white-space: nowrap;
+}
+
+.ds-record-tab__filter-icon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+.ds-record-tab__divider {
+  width: 100%;
+  height: 1px;
+  margin-top: auto;
+  object-fit: cover;
+}

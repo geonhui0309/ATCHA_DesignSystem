@@ -144,3 +144,11 @@ vite.config.ts.timestamp-*
 
 # Generated intermediate token build artifact
 build/js/tokens.raw.js
+
+# Storybook local cache and static output
+.storybook-home/
+storybook-static/
+
+# macOS metadata
+.DS_Store
+**/.DS_Store

@@ -1,0 +1,192 @@
+.ds-service-banner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-12);
+  align-items: center;
+  justify-content: center;
+  width: 312px;
+  padding: var(--spacing-16);
+  border-radius: var(--radius-medium);
+  background: var(--background-surface-primary);
+}
+
+.ds-service-banner[data-state="scheduled"] {
+  height: 108px;
+}
+
+.ds-service-banner[data-state="in-progress"] {
+  height: 138px;
+}
+
+.ds-service-banner__header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.ds-service-banner__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+  align-items: flex-start;
+}
+
+.ds-service-banner__title {
+  color: var(--text-primary);
+  font-family: var(--font-families-asta-sans), sans-serif;
+  font-size: var(--font-size-3);
+  font-weight: 600;
+  line-height: var(--line-height-3);
+}
+
+.ds-service-banner__subtitle {
+  color: var(--text-primary);
+  font-family: var(--font-families-asta-sans), sans-serif;
+  font-size: var(--font-size-1);
+  font-weight: 700;
+  line-height: var(--line-height-2);
+}
+
+.ds-service-banner__copy {
+  color: var(--text-brand);
+  font-family: var(--font-families-asta-sans), sans-serif;
+  font-size: var(--font-size-1);
+  font-weight: 600;
+  line-height: var(--line-height-2);
+}
+
+.ds-service-banner__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 37px;
+  height: 14px;
+  padding-inline: 8px;
+  border-radius: 10px;
+  background: var(--background-surface-brand);
+  color: var(--text-inverse);
+  font-family: var(--font-families-asta-sans), sans-serif;
+  font-size: var(--font-size-0);
+  font-weight: 600;
+  line-height: var(--line-height-1);
+}
+
+.ds-service-banner__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  color: var(--text-primary);
+}
+
+.ds-service-banner__footer-caption {
+  font-family: var(--font-families-asta-sans), sans-serif;
+  font-size: var(--font-size-0);
+  font-weight: 600;
+  line-height: var(--line-height-1);
+}
+
+.ds-service-banner__footer-value {
+  font-family: var(--font-families-asta-sans), sans-serif;
+  font-size: var(--font-size-3);
+  font-weight: 700;
+  line-height: var(--line-height-4);
+}
+
+.ds-service-banner__remaining {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-end;
+  padding-inline: 4px;
+}
+
+.ds-service-banner__remaining-label,
+.ds-service-banner__remaining-value {
+  font-family: var(--font-families-asta-sans), sans-serif;
+  font-size: var(--font-size-1);
+  font-weight: 600;
+  line-height: var(--line-height-2);
+}
+
+.ds-service-banner__remaining-label {
+  color: var(--text-primary);
+}
+
+.ds-service-banner__remaining-value {
+  color: var(--text-brand);
+}
+
+.ds-service-banner__progress {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+  width: 100%;
+}
+
+.ds-service-banner__progress-bar {
+  position: relative;
+  width: 280px;
+  height: 38px;
+}
+
+.ds-service-banner__progress-track,
+.ds-service-banner__progress-active {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 33px;
+  height: 2px;
+  background: var(--border-subtle);
+}
+
+.ds-service-banner__progress-active {
+  right: 262px;
+  background: var(--text-brand);
+}
+
+.ds-service-banner__progress-icon {
+  position: absolute;
+  left: 5px;
+  top: 0;
+  width: 18px;
+  height: 13px;
+  object-fit: contain;
+}
+
+.ds-service-banner__progress-point {
+  position: absolute;
+  top: 28px;
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--border-subtle);
+}
+
+.ds-service-banner__progress-point[data-active="true"] {
+  background: var(--text-brand);
+}
+
+.ds-service-banner__progress-point[data-step="1"] { left: 12px; }
+.ds-service-banner__progress-point[data-step="2"] { left: 134px; }
+.ds-service-banner__progress-point[data-step="3"] { right: 12px; }
+
+.ds-service-banner__progress-labels {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 280px;
+  font-family: var(--font-families-asta-sans), sans-serif;
+  font-size: var(--font-size-0);
+  font-weight: 600;
+  line-height: var(--line-height-1);
+}
+
+.ds-service-banner__progress-labels span {
+  color: var(--text-disabled);
+}
+
+.ds-service-banner__progress-labels span[data-active="true"] {
+  color: var(--text-primary);
+}

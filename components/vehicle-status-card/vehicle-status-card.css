@@ -1,0 +1,77 @@
+.ds-vehicle-status-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-16);
+  width: 360px;
+  height: 276px;
+  padding: var(--spacing-8) var(--spacing-24);
+  background: var(--background-surface-primary);
+}
+
+.ds-vehicle-status-card__header,
+.ds-vehicle-status-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.ds-vehicle-status-card__header-title,
+.ds-vehicle-status-card__footer-label,
+.ds-vehicle-status-card__footer-value {
+  color: var(--text-primary);
+  font-family: var(--font-families-asta-sans), sans-serif;
+  font-size: var(--font-size-3);
+  font-weight: 700;
+  line-height: var(--line-height-3);
+}
+
+.ds-vehicle-status-card__status-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.ds-vehicle-status-card__divider {
+  width: 100%;
+  height: 1px;
+  object-fit: cover;
+}
+
+.ds-vehicle-status-card__info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 156px;
+}
+
+.ds-vehicle-status-card__name {
+  color: var(--text-primary);
+  font-family: var(--font-families-asta-sans), sans-serif;
+  font-size: var(--font-size-7);
+  font-weight: 700;
+  line-height: var(--line-height-7);
+}
+
+.ds-vehicle-status-card__number {
+  color: var(--text-primary);
+  font-family: var(--font-families-asta-sans), sans-serif;
+  font-size: var(--font-size-4);
+  font-weight: 600;
+  line-height: var(--line-height-4);
+}
+
+.ds-vehicle-status-card__image-wrap {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: auto;
+}
+
+.ds-vehicle-status-card__image {
+  width: 152px;
+  height: 76px;
+  object-fit: cover;
+}

@@ -1,0 +1,48 @@
+.ds-service-menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 auto;
+  gap: var(--spacing-4);
+  width: auto;
+  min-width: 48px;
+}
+
+.ds-service-menu-item__icon-frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  flex: 0 0 auto;
+}
+
+.ds-service-menu-item__icon-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+}
+
+.ds-service-menu-item__icon {
+  display: block;
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.ds-service-menu-item[data-category="exterior-repair"] .ds-service-menu-item__icon-inner {
+  transform: rotate(180deg) scaleY(-1);
+}
+
+.ds-service-menu-item__label {
+  color: var(--text-primary);
+  text-align: center;
+  font-family: var(--font-families-asta-sans), sans-serif;
+  font-size: var(--font-size-1);
+  font-weight: 600;
+  line-height: var(--line-height-2);
+  white-space: nowrap;
+  word-break: keep-all;
+}

@@ -1,0 +1,43 @@
+.ds-service-menu-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--service-menu-section-gap, var(--spacing-12));
+  background: var(--service-menu-section-background, var(--background-surface-primary));
+}
+
+.ds-service-menu-section[data-variant="default"] {
+  width: 360px;
+  padding: var(--service-menu-section-padding, var(--spacing-12) var(--spacing-24) var(--spacing-16));
+}
+
+.ds-service-menu-section[data-variant="surface"] {
+  width: 312px;
+  padding: var(--service-menu-section-padding, var(--spacing-16));
+  border-radius: var(--service-menu-section-border-radius, var(--radius-medium));
+  gap: 27px;
+}
+
+.ds-service-menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--service-menu-header-gap, var(--spacing-12));
+  height: 42px;
+}
+
+.ds-service-menu-title {
+  margin: 0;
+  color: var(--service-menu-title-color, var(--text-primary));
+  font-family: var(--service-menu-title-font-family, var(--font-families-asta-sans), sans-serif);
+  font-size: var(--service-menu-title-font-size, var(--font-size-3));
+  font-weight: 700;
+  line-height: var(--service-menu-title-line-height, var(--line-height-3));
+}
+
+.ds-service-menu-grid {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--service-menu-grid-gap, var(--spacing-12));
+  width: 100%;
+}

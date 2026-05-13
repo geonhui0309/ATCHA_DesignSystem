@@ -1,0 +1,25 @@
+.ds-other-service-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-24);
+  width: 312px;
+  padding: var(--spacing-16);
+  border-radius: var(--radius-medium);
+  background: var(--background-secondary);
+}
+
+.ds-other-service-section__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.ds-other-service-section__item {
+  display: flex;
+  flex: 0 0 auto;
+}
+
+.ds-other-service-section__item--empty {
+  height: 54px;
+}

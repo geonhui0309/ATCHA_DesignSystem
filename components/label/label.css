@@ -1,0 +1,14 @@
+.ds-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-full);
+  padding: var(--spacing-4) var(--inline-small);
+  background: var(--label-background-default);
+  color: var(--text-brand);
+  font-family: var(--font-families-asta-sans), sans-serif;
+  font-size: var(--font-size-1);
+  font-weight: 600;
+  line-height: var(--line-height-2);
+  white-space: nowrap;
+}

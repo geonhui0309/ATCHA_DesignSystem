@@ -1,0 +1,28 @@
+.ds-radio-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: var(--spacing-2);
+}
+
+.ds-radio-button__control {
+  display: block;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  border: 1.5px solid var(--border-primary);
+  border-radius: 999px;
+  background: var(--background-surface-primary);
+}
+
+.ds-radio-button[data-state="disabled"] .ds-radio-button__control {
+  border-color: var(--border-disabled);
+  background: var(--background-surface-disabled, #f2f3f6);
+}
+
+.ds-radio-button[data-selected="true"] .ds-radio-button__control {
+  border-width: 6px;
+  border-color: var(--interaction-brand-default);
+}

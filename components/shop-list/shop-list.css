@@ -1,0 +1,4 @@
+.ds-shop-list {
+  display: flex;
+  flex-direction: column;
+}

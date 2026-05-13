@@ -1,0 +1,19 @@
+.ds-icon-button {
+  display: inline-flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+.ds-icon-button__inner {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+}
+
+.ds-icon-button__asset {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

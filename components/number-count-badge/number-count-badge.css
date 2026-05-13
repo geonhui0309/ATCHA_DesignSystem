@@ -1,0 +1,16 @@
+.ds-number-count-badge {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  background: var(--badge-background-information);
+  color: var(--text-inverse);
+  font-family: var(--font-families-asta-sans), sans-serif;
+  font-size: var(--font-size-0);
+  font-weight: 600;
+  line-height: var(--line-height-1);
+  text-align: center;
+}

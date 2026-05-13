@@ -1,0 +1,67 @@
+.ds-diag-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-12);
+  width: 360px;
+  padding: var(--spacing-16) var(--spacing-24);
+  border-bottom: 1px solid var(--border-subtle);
+  background: var(--background-surface-primary);
+}
+
+.ds-diag-item__day {
+  color: var(--text-secondary);
+  font-family: var(--font-families-asta-sans), sans-serif;
+  font-size: var(--font-size-1);
+  font-weight: 700;
+  line-height: var(--line-height-2);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.ds-diag-item__content {
+  display: flex;
+  min-width: 0;
+  flex: 1 0 0;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-8);
+}
+
+.ds-diag-item__text {
+  display: flex;
+  width: 222px;
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+
+.ds-diag-item__description {
+  color: var(--text-secondary);
+  font-family: var(--font-families-asta-sans), sans-serif;
+  font-size: var(--font-size-0);
+  font-weight: 600;
+  line-height: var(--line-height-1);
+}
+
+.ds-diag-item__header {
+  color: var(--text-secondary);
+  font-family: var(--font-families-asta-sans), sans-serif;
+  font-size: var(--font-size-2);
+  font-weight: 600;
+  line-height: var(--line-height-3);
+}
+
+.ds-diag-item[data-status="error"] .ds-diag-item__header {
+  color: var(--text-error);
+  font-weight: 500;
+}
+
+.ds-diag-item[data-status="complete"] .ds-diag-item__header {
+  font-weight: 500;
+}
+
+.ds-diag-item__icon {
+  width: 24px;
+  height: 24px;
+  flex: 0 0 auto;
+  object-fit: contain;
+}

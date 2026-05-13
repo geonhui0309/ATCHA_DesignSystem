@@ -1,6 +1,6 @@
 {
-  "icongraphy": {
-    "size": {
+  "size": {
+    "icon": {
       "small": {
         "$extensions": {
           "com.figma.scopes": [
@@ -9,7 +9,7 @@
           "com.figma.hiddenFromPublishing": false
         },
         "$type": "dimension",
-        "$value": 16
+        "$value": "{size.4}"
       },
       "medium": {
         "$extensions": {
@@ -19,7 +19,7 @@
           "com.figma.hiddenFromPublishing": false
         },
         "$type": "dimension",
-        "$value": 20
+        "$value": "{size.5}"
       },
       "large": {
         "$extensions": {
@@ -29,17 +29,7 @@
           "com.figma.hiddenFromPublishing": false
         },
         "$type": "dimension",
-        "$value": 24
-      },
-      "xlarge": {
-        "$extensions": {
-          "com.figma.scopes": [
-            "ALL_SCOPES"
-          ],
-          "com.figma.hiddenFromPublishing": false
-        },
-        "$type": "dimension",
-        "$value": 48
+        "$value": "{size.6}"
       }
     }
   }

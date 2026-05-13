@@ -10,6 +10,16 @@
       "$type": "dimension",
       "$value": 16
     },
+    "5": {
+      "$extensions": {
+        "com.figma.scopes": [
+          "WIDTH_HEIGHT"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "$type": "dimension",
+      "$value": 20
+    },
     "6": {
       "$extensions": {
         "com.figma.scopes": [

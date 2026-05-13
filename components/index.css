@@ -1,0 +1,49 @@
+@import "../build/css/tokens.css";
+@import "./authority-list/authority-list.css";
+@import "./status-item/status-item.css";
+@import "./atchapick-part-item/atchapick-part-item.css";
+@import "./badge/badge.css";
+@import "./button/button.css";
+@import "./checkbox/checkbox.css";
+@import "./choice-chip/choice-chip.css";
+@import "./category-label/category-label.css";
+@import "./dot-badge/dot-badge.css";
+@import "./diag-action-card/diag-action-card.css";
+@import "./diag-code-list/diag-code-list.css";
+@import "./diag-report-card/diag-report-card.css";
+@import "./filter-chip/filter-chip.css";
+@import "./global-navigation-bar/global-navigation-bar.css";
+@import "./history-item/history-item.css";
+@import "./history-list/history-list.css";
+@import "../icons/icon.css";
+@import "./icon-button/icon-button.css";
+@import "./input-field/input-field.css";
+@import "./label/label.css";
+@import "./maintenance-summary-card/maintenance-summary-card.css";
+@import "./navigation-bar/navigation-bar.css";
+@import "./number-count-badge/number-count-badge.css";
+@import "./notification-banner/notification-banner.css";
+@import "./other-service-section/other-service-section.css";
+@import "./radio-button/radio-button.css";
+@import "./recommend-card/recommend-card.css";
+@import "./record-tab/record-tab.css";
+@import "./service-item/service-item.css";
+@import "./service-banner/service-banner.css";
+@import "./service-menu-item/service-menu-item.css";
+@import "./service-menu-section/service-menu-section.css";
+@import "./shop-item/shop-item.css";
+@import "./thumbnail/thumbnail.css";
+@import "./input-field-with-button/input-field-with-button.css";
+@import "./part-item/part-item.css";
+@import "./part-list/part-list.css";
+@import "./diag-item/diag-item.css";
+@import "./diag-list/diag-list.css";
+@import "./shop-list/shop-list.css";
+@import "./vehicle-status-card/vehicle-status-card.css";
+@import "./vehicle-warning-section/vehicle-warning-section.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

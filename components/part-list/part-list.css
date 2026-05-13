@@ -1,0 +1,4 @@
+.ds-part-list {
+  display: flex;
+  flex-direction: column;
+}
