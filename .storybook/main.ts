@@ -6,6 +6,7 @@ const config: StorybookConfig = {
     "../icons/**/*.stories.@(ts|tsx)",
     "../tokens/**/*.stories.@(ts|tsx)"
   ],
+  staticDirs: ["./public"],
   addons: ["@storybook/addon-essentials"],
   framework: {
     name: "@storybook/react-vite",

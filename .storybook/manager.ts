@@ -1,10 +1,10 @@
 import { addons } from "@storybook/manager-api";
-import brandImage from "./brand.svg";
+import { create } from "@storybook/theming/create";
 
 addons.setConfig({
-  theme: {
-    brandTitle: "ATCHA Design System",
-    brandUrl: "./",
-    brandImage
-  }
+  theme: create({
+    base: "light",
+    brandTitle: "",
+    brandImage: "/brand.svg"
+  })
 });
