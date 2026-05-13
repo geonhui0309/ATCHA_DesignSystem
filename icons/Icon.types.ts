@@ -1,6 +1,7 @@
 export type IconFamily = "system" | "vehicle" | "vehicle-warning" | "status";
 
 export type SystemIconName =
+  | "add"
   | "home"
   | "repair"
   | "schedule"
@@ -9,6 +10,19 @@ export type SystemIconName =
   | "search"
   | "cancel"
   | "check"
+  | "password-visible"
+  | "password-invisible"
+  | "password-visible-outlined"
+  | "notification-on"
+  | "settings"
+  | "pin"
+  | "screen-theme"
+  | "map"
+  | "notification-alert"
+  | "notification-caution"
+  | "notification-check"
+  | "in-progress"
+  | "notification-cancel"
   | "eye"
   | "error"
   | "close-solid"
@@ -50,6 +64,7 @@ export interface AssetIconDefinition {
   family: IconFamily;
   kind: "asset";
   src: string;
+  markup?: string;
 }
 
 export type IconDefinition = InlineIconDefinition | AssetIconDefinition;

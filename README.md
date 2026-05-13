@@ -16,10 +16,6 @@ Design token source and build pipeline for ATCHA.
 components/
 ├── index.css
 ├── index.ts
-├── badge/
-│   ├── Badge.tsx
-│   ├── badge.css
-│   └── badge.tokens.ts
 ├── button/
 │   ├── Button.tsx
 │   ├── Button.styles.ts
@@ -83,7 +79,6 @@ tokens/
 │   └── typography/
 └── component/
     ├── button/
-    ├── badge/
     └── label/
 ```
 
@@ -125,7 +120,7 @@ const space16 = tokens.spacing["16"];
 - `components/` is the implementation layer that consumes generated design tokens.
 - Components are now authored in `tsx` as the source of truth for web usage.
 - Preview-only HTML and DOM builder files are kept out of component folders so each component has a single implementation path.
-- `components/button/`, `components/badge/`, and `components/label/` are token-connected primitives built from the current component token set.
+- `components/button/` and `components/label/` are token-connected primitives built from the current component token set.
 - `components/input-field/` and `components/checkbox/` are semantic-token-based web primitives added as the next layer while dedicated component tokens are still being defined.
 - `components/global-navigation-bar/` is connected from the Figma node `309:630` with Figma-derived sizing and remote icon assets.
 - `components/navigation-bar/`, `components/record-tab/`, `components/icon-button/`, and `components/radio-button/` are connected from Figma nodes `180:563`, `611:350`, `682:1806`, and `412:1124`.

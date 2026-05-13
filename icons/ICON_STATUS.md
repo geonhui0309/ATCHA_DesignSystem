@@ -16,11 +16,25 @@
 
 ## Local SVG migrated
 - `System`
+  - `add`
   - `home`
+  - `password-visible`
+  - `password-invisible`
+  - `password-visible-outlined`
+  - `notification-on`
+  - `settings`
+  - `pin`
+  - `screen-theme`
+  - `map`
+  - `notification-alert`
+  - `notification-caution`
+  - `notification-check`
   - `repair`
   - `schedule`
   - `record`
   - `profile`
+  - `in-progress`
+  - `notification-cancel`
   - `search`
   - `cancel`
   - `check`
@@ -32,6 +46,7 @@
   - `arrow-up-narrow`
   - `arrow-down-narrow`
   - `list`
+  - legacy aliases kept for compatibility: `eye`, `error`, `closeSolid`
 - `GlobalNavigationBar`
 - `GlobalNavigationBarItem`
 - `Button` text arrows

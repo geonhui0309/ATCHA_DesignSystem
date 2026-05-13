@@ -7,8 +7,10 @@ const meta = {
   title: "Components/GlobalNavigationBarItem",
   component: GlobalNavigationBarItemComponent,
   render: (args) => (
-    <StoryCanvas>
-      <GlobalNavigationBarItemComponent {...args} />
+    <StoryCanvas width={78}>
+      <div style={{ width: 78 }}>
+        <GlobalNavigationBarItemComponent {...args} />
+      </div>
     </StoryCanvas>
   )
 } satisfies Meta<typeof GlobalNavigationBarItemComponent>;
