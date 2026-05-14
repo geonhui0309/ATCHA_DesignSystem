@@ -3,27 +3,30 @@ import {
   CategoryLabel,
   Checkbox,
   ChoiceChip,
+  AdditionalServiceSection,
+  DiagnosticCodeList,
+  DiagnosticListSection,
   DotBadge,
   DiagActionCard,
   DiagCodeItem,
-  DiagList,
-  DiagCodeList,
   DiagReportCard,
   FilterChip,
   GlobalNavigationBar,
   GlobalNavigationBarItemComponent,
-  HistoryList,
+  HistoryTimelineSection,
   IconButton,
   InputField,
   InputFieldWithButton,
   MaintenanceSummaryCard,
   NavigationBar,
   NumberCountBadge,
+  StepProgressBar,
+  TimelineProgressBar,
+  MatrixProgressBar,
   NotificationBanner,
-  OtherServiceSection,
   AuthorityItem,
   AuthorityList,
-  PartList,
+  PartSelectionSection,
   RadioButton,
   RecommendCard,
   RecordTab,
@@ -32,7 +35,7 @@ import {
   ServiceMenuItem,
   ServiceMenuSection,
   ShopItem,
-  ShopList,
+  ShopListSection,
   StatusItem,
   Thumbnail,
   VehicleStatusCard,
@@ -103,7 +106,7 @@ export function DesignSystemExamples() {
       <AuthorityItem />
       <AuthorityList />
       <DiagCodeItem />
-      <DiagCodeList />
+      <DiagnosticCodeList />
       <StatusItem />
       <IconButton size="large" />
       <IconButton size="medium" state="pressed" />
@@ -112,15 +115,24 @@ export function DesignSystemExamples() {
       <RadioButton selected={false} />
       <RadioButton selected={false} state="disabled" />
       <NotificationBanner actionLabel="진단하기" />
-      <OtherServiceSection />
+      <StepProgressBar step="step01" />
+      <StepProgressBar step="step02" />
+      <StepProgressBar step="step03" />
+      <TimelineProgressBar step="step01" />
+      <TimelineProgressBar step="step02" />
+      <TimelineProgressBar step="step03" />
+      <MatrixProgressBar step="step01" />
+      <MatrixProgressBar step="step03" />
+      <MatrixProgressBar step="step05" />
+      <AdditionalServiceSection />
       <ServiceBanner state="scheduled" />
       <ServiceBanner state="in-progress" />
-      <PartList />
-      <HistoryList />
-      <DiagList />
+      <PartSelectionSection />
+      <HistoryTimelineSection />
+      <DiagnosticListSection />
       <ShopItem />
       <ShopItem state="pressed" />
-      <ShopList />
+      <ShopListSection />
       <ServiceMenuItem category="engine-oil" />
       <ServiceMenuItem category="tire" />
       <ServiceMenuItem category="exterior-repair" />

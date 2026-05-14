@@ -1,15 +1,9 @@
 import type { HTMLAttributes } from "react";
 
-import type { IconName } from "../../../icons/Icon.types";
+import type { AuthorityItemData } from "../../../contracts/authority/AuthorityItem";
 import { AuthorityItem, defaultAuthorityItemIconName } from "../../items/authority-item/AuthorityItem";
 import { cx } from "../../shared/foundation";
 import "./authority-list.css";
-
-export interface AuthorityItemData {
-  title: string;
-  description: string;
-  iconName?: IconName;
-}
 
 export interface AuthorityListProps extends HTMLAttributes<HTMLDivElement> {
   items?: AuthorityItemData[];

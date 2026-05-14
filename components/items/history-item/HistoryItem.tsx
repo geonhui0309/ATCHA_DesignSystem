@@ -1,16 +1,11 @@
 import type { HTMLAttributes } from "react";
 
+import type { HistoryItemData } from "../../../contracts/history/HistoryItem";
 import { cx } from "../../shared/foundation";
 import { Thumbnail } from "../../display/thumbnail/Thumbnail";
 import "./history-item.css";
 
-export interface HistoryItemProps extends HTMLAttributes<HTMLDivElement> {
-  day?: string;
-  item?: string;
-  name?: string;
-  price?: string;
-  state?: "default" | "pressed";
-}
+export interface HistoryItemProps extends HTMLAttributes<HTMLDivElement>, HistoryItemData {}
 
 export function HistoryItem({
   day = "12.06",

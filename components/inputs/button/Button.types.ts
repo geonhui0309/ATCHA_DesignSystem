@@ -13,7 +13,7 @@ export type VariantSize<V extends ButtonVariant> = ButtonSizeByVariant[V];
 
 export type ButtonProps<V extends ButtonVariant = ButtonVariant> = Omit<
   ButtonHTMLAttributes<HTMLButtonElement>,
-  "children" | "disabled"
+  "children"
 > & {
   label?: string;
   children?: ReactNode;

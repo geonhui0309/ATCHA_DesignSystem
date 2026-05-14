@@ -1,5 +1,6 @@
 import type { HTMLAttributes } from "react";
 
+import type { VehicleWarningSectionData } from "../../../contracts/vehicle/VehicleWarningSection";
 import { Button } from "../../inputs/button/Button";
 import { vehicleWarningAssets } from "../../shared/assets";
 import { cx } from "../../shared/foundation";
@@ -7,12 +8,14 @@ import "./vehicle-warning-section.css";
 
 const warningIcons = vehicleWarningAssets;
 
-export interface VehicleWarningSectionProps extends HTMLAttributes<HTMLDivElement> {
-  title?: string;
-}
+export interface VehicleWarningSectionProps
+  extends HTMLAttributes<HTMLDivElement>,
+    VehicleWarningSectionData {}
 
 export function VehicleWarningSection({
   title = "차량 경고등",
+  actionLabel = "더보기",
+  icons = warningIcons,
   className,
   ...rest
 }: VehicleWarningSectionProps) {
@@ -20,12 +23,12 @@ export function VehicleWarningSection({
     <section {...rest} className={cx("ds-vehicle-warning-section", className)}>
       <div className="ds-vehicle-warning-section__header">
         <span className="ds-vehicle-warning-section__title">{title}</span>
-        <Button variant="text" size="xsmall" iconRight>
-          더보기
+        <Button variant="text" size="xsmall" iconRight={true}>
+          {actionLabel}
         </Button>
       </div>
       <div className="ds-vehicle-warning-section__icons">
-        {warningIcons.map((src) => (
+        {icons.map((src) => (
           <img className="ds-vehicle-warning-section__icon" src={src} alt="" key={src} />
         ))}
       </div>

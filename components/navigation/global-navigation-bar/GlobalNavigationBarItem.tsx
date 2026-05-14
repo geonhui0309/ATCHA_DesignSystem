@@ -2,6 +2,7 @@ import type { HTMLAttributes } from "react";
 
 import { Icon } from "../../../icons/Icon";
 import type { IconName } from "../../../icons/Icon.types";
+import { DotBadge } from "../../display/dot-badge/DotBadge";
 import { cx } from "../../shared/foundation";
 import homeIconMarkup from "../../../icons/assets/system/home.svg?raw";
 import profileIconMarkup from "../../../icons/assets/system/profile.svg?raw";
@@ -76,7 +77,11 @@ export function GlobalNavigationBarItem({
         </div>
         <p className="ds-global-navigation-bar__label">{label}</p>
       </div>
-      {dot ? <div className="ds-global-navigation-bar__dot-badge" aria-hidden="true" /> : null}
+      {dot ? (
+        <div className="ds-global-navigation-bar__dot-badge" aria-hidden="true">
+          <DotBadge />
+        </div>
+      ) : null}
     </div>
   );
 }

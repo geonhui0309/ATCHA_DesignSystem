@@ -1,5 +1,6 @@
 import type { HTMLAttributes } from "react";
 
+import type { ShopItemData, ShopTimeSlotData } from "../../../contracts/shop/ShopItem";
 import { CategoryLabel } from "../../display/category-label/CategoryLabel";
 import { ChoiceChip } from "../../inputs/choice-chip";
 import { cx } from "../../shared/foundation";
@@ -15,7 +16,7 @@ const defaultCategories = [
   "#브레이크오일"
 ];
 
-const defaultTimeSlots = [
+const defaultTimeSlots: ShopTimeSlotData[] = [
   { value: "09:00", selected: false, state: "default" as const },
   { value: "10:00", selected: true, state: "default" as const },
   { value: "11:00", selected: false, state: "default" as const },
@@ -28,18 +29,14 @@ const defaultTimeSlots = [
   { value: "18:00", selected: false, state: "default" as const }
 ];
 
-export interface ShopItemProps extends HTMLAttributes<HTMLDivElement> {
-  address?: string;
-  name?: string;
-  state?: "default" | "pressed";
-  categories?: string[];
-}
+export interface ShopItemProps extends HTMLAttributes<HTMLDivElement>, ShopItemData {}
 
 export function ShopItem({
   address = "서울 서대문구 거북골로 34",
   name = "블루핸즈 명지대점",
   state = "default",
   categories = defaultCategories,
+  timeSlots = defaultTimeSlots,
   className,
   ...rest
 }: ShopItemProps) {
@@ -60,12 +57,12 @@ export function ShopItem({
         </div>
       </div>
       <div className="ds-shop-item__time-slot-list">
-        {defaultTimeSlots.map((slot) => (
+        {timeSlots.map((slot) => (
           <ChoiceChip
             key={slot.value}
             value={slot.value}
-            selected={slot.selected}
-            state={slot.state}
+            selected={slot.selected ?? false}
+            state={slot.state ?? "default"}
           />
         ))}
       </div>

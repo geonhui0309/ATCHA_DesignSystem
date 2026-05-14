@@ -1,10 +1,11 @@
 import type { HTMLAttributes } from "react";
 
+import type { DiagItemData } from "../../../contracts/diagnostic/DiagItem";
 import { cx } from "../../shared/foundation";
 import "./diag-item.css";
 
 const DIAG_STATUS_ICONS: Record<
-  "wrong" | "complete" | "error",
+  NonNullable<DiagItemData["status"]>,
   { viewBox: string; shapePath: string; symbolPath: string; color: string }
 > = {
   complete: {
@@ -27,12 +28,7 @@ const DIAG_STATUS_ICONS: Record<
   }
 } as const;
 
-export interface DiagItemProps extends HTMLAttributes<HTMLDivElement> {
-  day?: string;
-  description?: string;
-  header?: string;
-  status?: "error" | "complete" | "wrong";
-}
+export interface DiagItemProps extends HTMLAttributes<HTMLDivElement>, DiagItemData {}
 
 export function DiagItem({
   day = "07.16",

@@ -1,0 +1,12 @@
+export * from "./authority-list";
+export * from "./diagnostic-code-list";
+export * from "./diagnostic-list-section";
+export * from "./history-timeline-section";
+export * from "./additional-service-section";
+export * from "./part-selection-section";
+export * from "./service-banner";
+export * from "./service-menu-section";
+export * from "./shop-list-section";
+export * from "./vehicle-warning-section";
+export type { PatternMetadata, PatternPlacement } from "./metadata";
+export { patternMetadataRegistry } from "./registry";

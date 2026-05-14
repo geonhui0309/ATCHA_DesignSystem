@@ -67,7 +67,7 @@
   - `aircon-filter`
   - `air-filter`
   - `oil-filter`
-- `OtherServiceSection`
+- `AdditionalServiceSection`
   - reuses `ServiceItem`
 
 ## Still remote / not yet migrated
@@ -84,7 +84,7 @@
 - System icon sizes in use: `16 / 20 / 24`
 - Vehicle pictograms currently rendered by component sizing
   - `ServiceMenuItem`: `48 x 48`
-  - `ServiceItem` / `OtherServiceSection`: `24` base icon rendered inside component-specific slot sizing
+  - `ServiceItem` / `AdditionalServiceSection`: `24` base icon rendered inside component-specific slot sizing
 
 ## Token note
 - `48` pictogram size is currently a component-level exception.

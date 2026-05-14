@@ -1,0 +1,109 @@
+.ds-step-progress-bar {
+  --ds-step-side-padding: 28px;
+  --ds-progress-point-size: 10px;
+  --ds-progress-point-radius: calc(var(--ds-progress-point-size) / 2);
+  --ds-progress-track-usable-width: calc(
+    100% - (var(--ds-step-side-padding) * 2) - var(--ds-progress-point-size)
+  );
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+  width: 360px;
+  height: 36px;
+}
+
+.ds-step-progress-bar__labels {
+  position: relative;
+  height: 12px;
+}
+
+.ds-step-progress-bar__label {
+  position: absolute;
+  top: 50%;
+  min-width: 56px;
+  height: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: var(--font-families-asta-sans), sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.ds-step-progress-bar__label[data-state="current"] {
+  color: var(--text-primary);
+  font-size: var(--font-size-0);
+  line-height: var(--line-height-1);
+}
+
+.ds-step-progress-bar__label[data-state="past"] {
+  color: var(--text-brand);
+  font-size: var(--font-size-0);
+  line-height: var(--line-height-1);
+}
+
+.ds-step-progress-bar__label[data-state="upcoming"] {
+  color: var(--text-disabled);
+  font-size: var(--font-size-0);
+  line-height: var(--line-height-1);
+}
+
+.ds-step-progress-bar__track {
+  position: relative;
+  height: 12px;
+}
+
+.ds-step-progress-bar__track-base,
+.ds-step-progress-bar__track-fill {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  height: 4px;
+  border-radius: 999px;
+}
+
+.ds-step-progress-bar__track-base {
+  width: 100%;
+  background: var(--border-subtle);
+}
+
+.ds-step-progress-bar__track-fill {
+  background: var(--background-surface-brand);
+}
+
+.ds-step-progress-bar__points {
+  position: absolute;
+  inset: 0;
+}
+
+.ds-step-progress-bar__point {
+  position: absolute;
+  top: 0;
+  display: block;
+  width: var(--ds-progress-point-size);
+  height: var(--ds-progress-point-size);
+  border-radius: 999px;
+  background: var(--border-subtle);
+  transform: translateX(-50%);
+}
+
+.ds-step-progress-bar__point::after {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  border-radius: 999px;
+  background: currentColor;
+}
+
+.ds-step-progress-bar__point[data-state="current"],
+.ds-step-progress-bar__point[data-state="past"] {
+  color: var(--background-surface-brand);
+}
+
+.ds-step-progress-bar__point[data-state="upcoming"] {
+  color: var(--border-subtle);
+}

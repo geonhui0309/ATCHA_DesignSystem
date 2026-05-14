@@ -1,10 +1,10 @@
 import type { CSSProperties, HTMLAttributes } from "react";
 
+import type { ServiceMenuItemCategory } from "../../../contracts/service/ServiceMenuItem";
 import { Button } from "../../inputs/button";
 import { cx } from "../../shared/foundation";
 import {
-  ServiceMenuItem as ServiceMenuCategoryItem,
-  type ServiceMenuItemCategory
+  ServiceMenuItem as ServiceMenuCategoryItem
 } from "../../items/service-menu-item/ServiceMenuItem";
 import {
   serviceMenuSectionTokens,
@@ -60,7 +60,7 @@ export function ServiceMenuSection({
       {variant === "default" ? (
         <div className="ds-service-menu-header">
           <h2 className="ds-service-menu-title">{title}</h2>
-          <Button variant="text" size="xsmall" iconRight>
+          <Button variant="text" size="xsmall" iconRight={true}>
             {actionLabel}
           </Button>
         </div>

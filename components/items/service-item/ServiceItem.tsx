@@ -1,5 +1,6 @@
 import type { HTMLAttributes } from "react";
 
+import type { ServiceItemType } from "../../../contracts/service/ServiceItem";
 import { Icon } from "../../../icons/Icon";
 import type { VehicleIconName } from "../../../icons/Icon.types";
 import { cx } from "../../shared/foundation";
@@ -31,14 +32,6 @@ const SERVICE_ITEM_CONFIG = {
     label: "오일 필터"
   }
 } as const;
-
-export type ServiceItemType =
-  | "washer"
-  | "coolant"
-  | "wiper"
-  | "aircon-filter"
-  | "air-filter"
-  | "oil-filter";
 
 export interface ServiceItemProps extends HTMLAttributes<HTMLDivElement> {
   serviceType?: ServiceItemType;

@@ -1,5 +1,6 @@
 import type { HTMLAttributes } from "react";
 
+import type { AuthorityItemData } from "../../../contracts/authority/AuthorityItem";
 import { Icon } from "../../../icons/Icon";
 import type { IconName } from "../../../icons/Icon.types";
 import { cx } from "../../shared/foundation";
@@ -7,11 +8,9 @@ import "../../lists/authority-list/authority-list.css";
 
 export const defaultAuthorityItemIconName: IconName = "authority-camera";
 
-export interface AuthorityItemProps extends HTMLAttributes<HTMLDivElement> {
-  title?: string;
-  description?: string;
-  iconName?: IconName;
-}
+export interface AuthorityItemProps
+  extends HTMLAttributes<HTMLDivElement>,
+    Partial<AuthorityItemData> {}
 
 export function AuthorityItem({
   title = "저장공간",

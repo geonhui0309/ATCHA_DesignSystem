@@ -1,0 +1,40 @@
+.ds-matrix-progress-bar {
+  display: flex;
+  justify-content: center;
+  width: 10px;
+  height: 268px;
+}
+
+.ds-matrix-progress-bar__column {
+  position: relative;
+  display: grid;
+  grid-auto-rows: 10px;
+  row-gap: 52px;
+  justify-items: center;
+}
+
+.ds-matrix-progress-bar__line {
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 50%;
+  width: 2px;
+  transform: translateX(-50%);
+  background: var(--border-subtle);
+  opacity: 0.4;
+}
+
+.ds-matrix-progress-bar__point {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--border-subtle);
+}
+
+.ds-matrix-progress-bar__point[data-state="active"] {
+  background: var(--background-surface-brand);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.9);
+}

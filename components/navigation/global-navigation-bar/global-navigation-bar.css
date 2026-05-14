@@ -85,17 +85,4 @@
   justify-content: center;
   width: 16px;
   height: 16px;
-  padding: var(--spacing-6);
-}
-
-.ds-global-navigation-bar__dot,
-.ds-global-navigation-bar__dot-asset {
-  width: 4px;
-  height: 4px;
-  display: block;
-}
-
-.ds-global-navigation-bar__dot {
-  border-radius: 999px;
-  background: var(--badge-background-dot);
 }

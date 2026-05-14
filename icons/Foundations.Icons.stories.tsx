@@ -104,5 +104,8 @@ function IconGallery() {
 }
 
 export const Gallery: Story = {
+  args: {
+    name: "search"
+  },
   render: () => <IconGallery />
 };

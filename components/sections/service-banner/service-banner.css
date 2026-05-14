@@ -1,4 +1,5 @@
 .ds-service-banner {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   gap: var(--spacing-12);
@@ -120,73 +121,6 @@
 .ds-service-banner__progress {
   display: flex;
   flex-direction: column;
-  gap: 4px;
   align-items: center;
   width: 100%;
-}
-
-.ds-service-banner__progress-bar {
-  position: relative;
-  width: 280px;
-  height: 38px;
-}
-
-.ds-service-banner__progress-track,
-.ds-service-banner__progress-active {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 33px;
-  height: 2px;
-  background: var(--border-subtle);
-}
-
-.ds-service-banner__progress-active {
-  right: 262px;
-  background: var(--text-brand);
-}
-
-.ds-service-banner__progress-icon {
-  position: absolute;
-  left: 5px;
-  top: 0;
-  width: 18px;
-  height: 13px;
-  object-fit: contain;
-}
-
-.ds-service-banner__progress-point {
-  position: absolute;
-  top: 28px;
-  width: 8px;
-  height: 8px;
-  border-radius: 999px;
-  background: var(--border-subtle);
-}
-
-.ds-service-banner__progress-point[data-active="true"] {
-  background: var(--text-brand);
-}
-
-.ds-service-banner__progress-point[data-step="1"] { left: 12px; }
-.ds-service-banner__progress-point[data-step="2"] { left: 134px; }
-.ds-service-banner__progress-point[data-step="3"] { right: 12px; }
-
-.ds-service-banner__progress-labels {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 280px;
-  font-family: var(--font-families-asta-sans), sans-serif;
-  font-size: var(--font-size-0);
-  font-weight: 600;
-  line-height: var(--line-height-1);
-}
-
-.ds-service-banner__progress-labels span {
-  color: var(--text-disabled);
-}
-
-.ds-service-banner__progress-labels span[data-active="true"] {
-  color: var(--text-primary);
 }

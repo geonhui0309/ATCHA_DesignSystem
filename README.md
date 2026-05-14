@@ -1,6 +1,6 @@
 # ATCHA Design Tokens
 
-Design token source and build pipeline for ATCHA.
+Design token source and build pipeline for ATCHA, including a component layer and a pattern/contract layer for AI-friendly composition.
 
 ## Overview
 
@@ -14,6 +14,8 @@ Design token source and build pipeline for ATCHA.
 
 ```text
 components/
+contracts/
+patterns/
 ├── index.css
 ├── index.ts
 ├── button/
@@ -113,6 +115,9 @@ const space16 = tokens.spacing["16"];
 ## Components
 
 - `components/` is the implementation layer that consumes generated design tokens.
+- `contracts/` defines reusable data shapes and shared value unions used across components and patterns.
+- `patterns/` provides section/list-level composition entrypoints with renamed pattern-first APIs and compatibility aliases for legacy names.
+- `patterns/registry.ts` and per-pattern `metadata.ts` provide AI-facing usage metadata for screen generation.
 - Components are now authored in `tsx` as the source of truth for web usage.
 - Preview-only HTML and DOM builder files are kept out of component folders so each component has a single implementation path.
 - `components/inputs/button/` is a token-connected primitive built from the current component token set.
@@ -125,6 +130,13 @@ const space16 = tokens.spacing["16"];
 
 ## Notes
 
+- Package entrypoints are exposed through `exports`:
+  - `atcha_designsystem`
+  - `atcha_designsystem/components`
+  - `atcha_designsystem/patterns`
+  - `atcha_designsystem/contracts`
+  - `atcha_designsystem/styles.css`
+  - `atcha_designsystem/tokens.css`
 - `build/js/tokens.raw.js` is intentionally ignored and deleted after each build.
 - If you change token paths, keep alias references (`{...}`) consistent with actual token keys.
 - Current font-weight token values are exported as names such as `SemiBold`, so component code currently maps them to numeric CSS weights where needed.

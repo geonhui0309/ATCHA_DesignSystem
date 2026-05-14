@@ -1,0 +1,5 @@
+import{j as r}from"./jsx-runtime-Cf8x2fCZ.js";import"./AuthorityList-mdyXqtfH.js";import"./PartSelectionSection-ChbumDMb.js";import"./Button-DATDQKqp.js";import{g as o}from"./VehicleStatusCard-DDsJ1VsL.js";import"./ShopListSection-BZIMYLK-.js";import"./DiagnosticCodeList-JBW8ZL6U.js";import"./DiagnosticListSection-ToosHBAk.js";import"./HistoryTimelineSection-DkW6C5ZR.js";import"./Icon-DDBEd_Ks.js";import"./AdditionalServiceSection-CEWN0rH6.js";import"./ServiceBanner-Dv75Vpso.js";import"./ServiceMenuSection-KWgjPlNR.js";import"./Thumbnail-B1U3-C7m.js";import"./VehicleWarningSection-wK1Govq6.js";import{S as i}from"./story-helpers-BoPyVYcm.js";import"./index-yBjzXJbu.js";import"./foundation-BkMwuzeQ.js";import"./assets-CYzlDjnP.js";const y={title:"Components/Inputs/RadioButton",component:o,render:s=>r.jsx(i,{children:r.jsx(o,{...s})})},t={args:{selected:!0}};var e,m,p;t.parameters={...t.parameters,docs:{...(e=t.parameters)==null?void 0:e.docs,source:{originalSource:`{
+  args: {
+    selected: true
+  }
+}`,...(p=(m=t.parameters)==null?void 0:m.docs)==null?void 0:p.source}}};const I=["Default"];export{t as Default,I as __namedExportsOrder,y as default};

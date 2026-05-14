@@ -2,12 +2,40 @@
   "name": "atcha_designsystem",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build:tokens": "style-dictionary build --config style-dictionary.config.js && node scripts/generate-nested-tokens.js",
+    "build:package": "tsc -p tsconfig.build.json && node scripts/copy-package-assets.cjs",
     "storybook": "storybook dev --ci --disable-telemetry",
     "build-storybook": "storybook build --disable-telemetry",
+    "postbuild-storybook": "node scripts/fix-storybook-preview-chunks.cjs",
+    "typecheck": "tsc --noEmit",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./components": {
+      "types": "./dist/components/index.d.ts",
+      "default": "./dist/components/index.js"
+    },
+    "./patterns": {
+      "types": "./dist/patterns/index.d.ts",
+      "default": "./dist/patterns/index.js"
+    },
+    "./contracts": {
+      "types": "./dist/contracts/index.d.ts",
+      "default": "./dist/contracts/index.js"
+    },
+    "./styles.css": "./dist/components/index.css",
+    "./tokens.css": "./dist/build/css/tokens.css"
   },
   "repository": {
     "type": "git",

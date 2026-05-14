@@ -29,7 +29,10 @@ export function Button<V extends ButtonVariant = "filled">({
     ...style
   };
 
-  const textVariantSize = variant === "text" && (size === "xsmall" || size === "large") ? size : null;
+  const textVariantSize =
+    variant === "text" && (size === "xsmall" || size === "large")
+      ? (size as "xsmall" | "large")
+      : null;
   const iconSize = textVariantSize
     ? getButtonTextIconSize(textVariantSize)
     : undefined;

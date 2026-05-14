@@ -1,0 +1,90 @@
+.ds-timeline-progress-bar {
+  --ds-timeline-side-padding: 28px;
+  --ds-timeline-point-size: 10px;
+  --ds-timeline-point-radius: calc(var(--ds-timeline-point-size) / 2);
+  --ds-timeline-track-usable-width: calc(
+    100% - (var(--ds-timeline-side-padding) * 2) - var(--ds-timeline-point-size)
+  );
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+  width: 280px;
+}
+
+.ds-timeline-progress-bar__visual {
+  position: relative;
+  height: 32px;
+}
+
+.ds-timeline-progress-bar__rail,
+.ds-timeline-progress-bar__fill {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  height: 4px;
+  border-radius: 999px;
+}
+
+.ds-timeline-progress-bar__rail {
+  width: 100%;
+  background: var(--border-subtle);
+}
+
+.ds-timeline-progress-bar__fill {
+  background: var(--background-surface-brand);
+}
+
+.ds-timeline-progress-bar__vehicle {
+  position: absolute;
+  top: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.ds-timeline-progress-bar__points {
+  position: absolute;
+  inset: 0;
+}
+
+.ds-timeline-progress-bar__point {
+  position: absolute;
+  top: 25px;
+  display: block;
+  width: var(--ds-timeline-point-size);
+  height: var(--ds-timeline-point-size);
+  border-radius: 999px;
+  background: var(--border-subtle);
+  transform: translateX(-50%);
+}
+
+.ds-timeline-progress-bar__point[data-state="active"] {
+  background: var(--background-surface-brand);
+}
+
+.ds-timeline-progress-bar__labels {
+  position: relative;
+  height: 16px;
+}
+
+.ds-timeline-progress-bar__label {
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  min-width: 56px;
+  height: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--text-disabled);
+  font-family: var(--font-families-asta-sans), sans-serif;
+  font-size: var(--font-size-1);
+  font-style: normal;
+  font-weight: 600;
+  line-height: var(--line-height-2);
+  white-space: nowrap;
+}
+
+.ds-timeline-progress-bar__label[data-state="current"] {
+  color: var(--text-primary);
+}

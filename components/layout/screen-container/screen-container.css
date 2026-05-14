@@ -1,0 +1,16 @@
+.ds-screen-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--layout-section-gap-medium);
+  width: min(100%, var(--screen-container-max-width, 360px));
+  min-width: 0;
+}
+
+.ds-screen-container[data-padded="true"] {
+  padding-inline: var(--layout-screen-padding-x);
+  padding-block: var(--layout-screen-padding-y);
+}
+
+.ds-screen-container[data-padded="false"] {
+  padding: 0;
+}

@@ -1,0 +1,27 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "rootDir": ".",
+    "outDir": "dist",
+    "declaration": true,
+    "noEmit": false
+  },
+  "include": [
+    "index.ts",
+    "components/**/*.ts",
+    "components/**/*.tsx",
+    "contracts/**/*.ts",
+    "patterns/**/*.ts",
+    "icons/**/*.ts",
+    "icons/**/*.tsx",
+    "global.d.ts"
+  ],
+  "exclude": [
+    "**/*.stories.tsx",
+    "components/examples.tsx",
+    ".storybook/**/*",
+    "tokens/**/*"
+  ]
+}

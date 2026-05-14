@@ -1,13 +1,12 @@
 import type { HTMLAttributes } from "react";
 
-import { bannerProgressAsset } from "../../shared/assets";
+import type { ServiceBannerState } from "../../../contracts/service/ServiceBanner";
+import { TimelineProgressBar } from "../../feedback/timeline-progress-bar/TimelineProgressBar";
 import { cx } from "../../shared/foundation";
 import "./service-banner.css";
 
-const progressCarIcon = bannerProgressAsset;
-
 export interface ServiceBannerProps extends HTMLAttributes<HTMLDivElement> {
-  state?: "scheduled" | "in-progress";
+  state?: ServiceBannerState;
 }
 
 export function ServiceBanner({
@@ -52,19 +51,7 @@ export function ServiceBanner({
         </div>
       ) : (
         <div className="ds-service-banner__progress">
-          <div className="ds-service-banner__progress-bar">
-            <div className="ds-service-banner__progress-track" />
-            <div className="ds-service-banner__progress-active" />
-            <img className="ds-service-banner__progress-icon" src={progressCarIcon} alt="" />
-            <span className="ds-service-banner__progress-point" data-active="true" data-step="1" />
-            <span className="ds-service-banner__progress-point" data-step="2" />
-            <span className="ds-service-banner__progress-point" data-step="3" />
-          </div>
-          <div className="ds-service-banner__progress-labels">
-            <span data-active="true">차량 입고</span>
-            <span>차량 정비</span>
-            <span>정비 완료</span>
-          </div>
+          <TimelineProgressBar step="step01" />
         </div>
       )}
     </section>

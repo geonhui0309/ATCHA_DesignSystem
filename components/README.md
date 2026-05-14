@@ -22,18 +22,18 @@ components/
 │   ├── Button.types.ts
 │   ├── button.css
 │   └── index.ts
-├── part-list/
-│   ├── PartList.tsx
-│   └── part-list.css
-├── history-list/
-│   ├── HistoryList.tsx
-│   └── history-list.css
-├── diag-list/
-│   ├── DiagList.tsx
-│   └── diag-list.css
-├── shop-list/
-│   ├── ShopList.tsx
-│   └── shop-list.css
+├── part-selection-section/
+│   ├── PartSelectionSection.tsx
+│   └── part-selection-section.css
+├── history-timeline-section/
+│   ├── HistoryTimelineSection.tsx
+│   └── history-timeline-section.css
+├── diagnostic-list-section/
+│   ├── DiagnosticListSection.tsx
+│   └── diagnostic-list-section.css
+├── shop-list-section/
+│   ├── ShopListSection.tsx
+│   └── shop-list-section.css
 ├── service-menu-section/
 │   ├── ServiceMenuSection.tsx
 │   ├── service-menu-section.css

@@ -1,14 +1,13 @@
 import type { HTMLAttributes } from "react";
 
+import type { AtchapickPartItemData } from "../../../contracts/parts/AtchapickPartItem";
 import { cx } from "../../shared/foundation";
 import { Thumbnail } from "../../display/thumbnail/Thumbnail";
 import "./atchapick-part-item.css";
 
-export interface AtchapickPartItemProps extends HTMLAttributes<HTMLDivElement> {
-  itemName?: string;
-  price?: string;
-  state?: "default" | "pressed";
-}
+export interface AtchapickPartItemProps
+  extends HTMLAttributes<HTMLDivElement>,
+    AtchapickPartItemData {}
 
 export function AtchapickPartItem({
   itemName = "NAME",

@@ -1,5 +1,6 @@
 import type { HTMLAttributes } from "react";
 
+import type { PartItemData } from "../../../contracts/parts/PartItem";
 import { horizontalDividerAsset } from "../../shared/assets";
 import { cx } from "../../shared/foundation";
 import { Thumbnail } from "../../display/thumbnail/Thumbnail";
@@ -7,11 +8,7 @@ import "./part-item.css";
 
 const dividerAsset = horizontalDividerAsset;
 
-export interface PartItemProps extends HTMLAttributes<HTMLDivElement> {
-  name?: string;
-  price?: string;
-  state?: "default" | "pressed";
-}
+export interface PartItemProps extends HTMLAttributes<HTMLDivElement>, PartItemData {}
 
 export function PartItem({
   name = "NAME",

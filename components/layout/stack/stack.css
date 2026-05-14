@@ -1,0 +1,23 @@
+.ds-stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--stack-gap, var(--block-medium));
+  width: 100%;
+  min-width: 0;
+}
+
+.ds-stack[data-align="start"] {
+  align-items: flex-start;
+}
+
+.ds-stack[data-align="center"] {
+  align-items: center;
+}
+
+.ds-stack[data-align="end"] {
+  align-items: flex-end;
+}
+
+.ds-stack[data-align="stretch"] {
+  align-items: stretch;
+}

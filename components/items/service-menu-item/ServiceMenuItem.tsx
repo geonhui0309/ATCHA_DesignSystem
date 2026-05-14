@@ -1,5 +1,6 @@
 import type { HTMLAttributes } from "react";
 
+import type { ServiceMenuItemCategory } from "../../../contracts/service/ServiceMenuItem";
 import { cx } from "../../shared/foundation";
 import engineOilIconMarkup from "../../../icons/assets/vehicle/engine-oil.svg?raw";
 import exteriorRepairIconMarkup from "../../../icons/assets/vehicle/exterior-repair.svg?raw";
@@ -26,12 +27,6 @@ const MENU_ITEM_CONFIG = {
     label: "차량 정비"
   }
 } satisfies Record<string, { iconMarkup: string; label: string; flipped?: boolean }>;
-
-export type ServiceMenuItemCategory =
-  | "engine-oil"
-  | "tire"
-  | "exterior-repair"
-  | "vehicle-maintenance";
 
 export interface ServiceMenuItemProps extends HTMLAttributes<HTMLDivElement> {
   category?: ServiceMenuItemCategory;

@@ -11,8 +11,14 @@
     "allowSyntheticDefaultImports": true
   },
   "include": [
+    "index.ts",
     "components/**/*.ts",
     "components/**/*.tsx",
+    "contracts/**/*.ts",
+    "patterns/**/*.ts",
+    "icons/**/*.ts",
+    "icons/**/*.tsx",
+    "global.d.ts",
     ".storybook/**/*.ts",
     "stories/**/*.ts",
     "stories/**/*.tsx"

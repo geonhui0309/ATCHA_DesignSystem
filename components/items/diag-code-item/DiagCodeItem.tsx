@@ -1,12 +1,12 @@
 import type { HTMLAttributes } from "react";
 
+import type { DiagCodeItemData } from "../../../contracts/diagnostic/DiagCodeItem";
 import { cx } from "../../shared/foundation";
-import "../../lists/diag-code-list/diag-code-list.css";
+import "../../lists/diagnostic-code-list/diagnostic-code-list.css";
 
-export interface DiagCodeItemProps extends HTMLAttributes<HTMLDivElement> {
-  code?: string;
-  description?: string;
-}
+export interface DiagCodeItemProps
+  extends HTMLAttributes<HTMLDivElement>,
+    Partial<DiagCodeItemData> {}
 
 export function DiagCodeItem({
   code = "P0301",

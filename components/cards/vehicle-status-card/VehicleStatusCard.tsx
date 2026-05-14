@@ -1,5 +1,6 @@
 import type { HTMLAttributes } from "react";
 
+import type { DiagnosticStatus } from "../../../contracts/common/status";
 import {
   horizontalDividerAsset,
   placeholderVehicleAsset
@@ -11,7 +12,7 @@ const dividerAsset = horizontalDividerAsset;
 const vehicleImage = placeholderVehicleAsset;
 
 const VEHICLE_STATUS_CARD_ICONS: Record<
-  "wrong" | "complete" | "error",
+  DiagnosticStatus,
   { viewBox: string; shapePath: string; symbolPath: string; color: string }
 > = {
   complete: {
@@ -36,7 +37,7 @@ const VEHICLE_STATUS_CARD_ICONS: Record<
 
 export interface VehicleStatusCardProps extends HTMLAttributes<HTMLDivElement> {
   imageSrc?: string;
-  status?: "error" | "complete" | "wrong";
+  status?: DiagnosticStatus;
 }
 
 export function VehicleStatusCard({
