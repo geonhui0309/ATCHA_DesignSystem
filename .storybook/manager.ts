@@ -5,6 +5,6 @@ addons.setConfig({
   theme: create({
     base: "light",
     brandTitle: "",
-    brandImage: "/brand.svg"
+    brandImage: "brand.svg"
   })
 });

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 
 import tokens from "../build/js/tokens.js";
@@ -28,7 +29,7 @@ type TypographySection = {
   }>;
 };
 
-const sampleText = "초보자도 언제 어디서나, 쉬운 차량 관리";
+const defaultSampleText = "초보자도 언제 어디서나, 쉬운 차량 관리";
 
 function getTypographyToken(path: string): TypographyToken {
   return path.split(".").reduce<unknown>((current, key) => {
@@ -84,6 +85,8 @@ const sections: TypographySection[] = [
 ];
 
 function TypographyPage() {
+  const [sampleText, setSampleText] = useState(defaultSampleText);
+
   return (
     <main
       style={{
@@ -146,9 +149,9 @@ function TypographyPage() {
                   key={tokenPath}
                   style={{
                     display: "grid",
-                    gridTemplateColumns: "160px minmax(240px, 1fr) minmax(180px, 220px)",
+                    gridTemplateColumns: "160px minmax(240px, 560px) minmax(150px, 180px)",
                     alignItems: "baseline",
-                    columnGap: "28px"
+                    columnGap: "18px"
                   }}
                 >
                   <div
@@ -162,6 +165,11 @@ function TypographyPage() {
                     {tokenPath}
                   </div>
                   <div
+                    contentEditable
+                    suppressContentEditableWarning
+                    onInput={(event) => {
+                      setSampleText(event.currentTarget.textContent || "");
+                    }}
                     style={{
                       fontFamily: value.fontFamily,
                       fontWeight: value.fontWeight as never,
@@ -169,7 +177,9 @@ function TypographyPage() {
                       lineHeight: value.lineHeight,
                       color: "#131417",
                       minWidth: 0,
-                      wordBreak: "keep-all"
+                      wordBreak: "keep-all",
+                      outline: "none",
+                      cursor: "text"
                     }}
                   >
                     {sampleText}
@@ -180,7 +190,7 @@ function TypographyPage() {
                       alignItems: "baseline",
                       justifyContent: "flex-start",
                       flexWrap: "wrap",
-                      gap: "12px",
+                      gap: "8px",
                       fontSize: "14px",
                       lineHeight: "20px",
                       color: "#131417",
