@@ -1,3 +1,6 @@
+export { componentMetadataRegistry } from "./registry";
+export type { ComponentMetadata, ComponentPlacement } from "./metadata";
+
 export { AuthorityList } from "./lists/authority-list/AuthorityList";
 export type { AuthorityListProps } from "./lists/authority-list/AuthorityList";
 export type { AuthorityItemData } from "../contracts/authority/AuthorityItem";
@@ -33,22 +36,10 @@ export { DiagCodeItem } from "./items/diag-code-item/DiagCodeItem";
 export type { DiagCodeItemProps } from "./items/diag-code-item/DiagCodeItem";
 export { DiagItem } from "./items/diag-item/DiagItem";
 export type { DiagItemProps } from "./items/diag-item/DiagItem";
-export {
-  DiagnosticListSection,
-  DiagnosticListSection as DiagList
-} from "./lists/diagnostic-list-section/DiagnosticListSection";
-export type {
-  DiagnosticListSectionProps,
-  DiagnosticListSectionProps as DiagListProps
-} from "./lists/diagnostic-list-section/DiagnosticListSection";
-export {
-  DiagnosticCodeList,
-  DiagnosticCodeList as DiagCodeList
-} from "./lists/diagnostic-code-list/DiagnosticCodeList";
-export type {
-  DiagnosticCodeListProps,
-  DiagnosticCodeListProps as DiagCodeListProps
-} from "./lists/diagnostic-code-list/DiagnosticCodeList";
+export { DiagnosticListSection } from "./lists/diagnostic-list-section/DiagnosticListSection";
+export type { DiagnosticListSectionProps } from "./lists/diagnostic-list-section/DiagnosticListSection";
+export { DiagnosticCodeList } from "./lists/diagnostic-code-list/DiagnosticCodeList";
+export type { DiagnosticCodeListProps } from "./lists/diagnostic-code-list/DiagnosticCodeList";
 export type { DiagCodeItemData } from "../contracts/diagnostic/DiagCodeItem";
 export { DiagReportCard } from "./cards/diag-report-card/DiagReportCard";
 
@@ -75,14 +66,8 @@ export { InputField } from "./inputs/input-field/InputField";
 export type { InputFieldProps } from "./inputs/input-field/InputField";
 export { HistoryItem } from "./items/history-item/HistoryItem";
 export type { HistoryItemProps } from "./items/history-item/HistoryItem";
-export {
-  HistoryTimelineSection,
-  HistoryTimelineSection as HistoryList
-} from "./lists/history-timeline-section/HistoryTimelineSection";
-export type {
-  HistoryTimelineSectionProps,
-  HistoryTimelineSectionProps as HistoryListProps
-} from "./lists/history-timeline-section/HistoryTimelineSection";
+export { HistoryTimelineSection } from "./lists/history-timeline-section/HistoryTimelineSection";
+export type { HistoryTimelineSectionProps } from "./lists/history-timeline-section/HistoryTimelineSection";
 export type { HistoryItemData } from "../contracts/history/HistoryItem";
 
 export { Icon } from "../icons/Icon";
@@ -120,14 +105,8 @@ export {
 export type {
   TimelineProgressBarProps
 } from "./feedback/timeline-progress-bar/TimelineProgressBar";
-export {
-  AdditionalServiceSection,
-  AdditionalServiceSection as OtherServiceSection
-} from "./sections/additional-service-section/AdditionalServiceSection";
-export type {
-  AdditionalServiceSectionProps,
-  AdditionalServiceSectionProps as OtherServiceSectionProps
-} from "./sections/additional-service-section/AdditionalServiceSection";
+export { AdditionalServiceSection } from "./sections/additional-service-section/AdditionalServiceSection";
+export type { AdditionalServiceSectionProps } from "./sections/additional-service-section/AdditionalServiceSection";
 
 export { RadioButton } from "./inputs/radio-button/RadioButton";
 export type { RadioButtonProps } from "./inputs/radio-button/RadioButton";
@@ -139,14 +118,8 @@ export { RecordTab } from "./navigation/record-tab/RecordTab";
 export type { RecordTabProps } from "./navigation/record-tab/RecordTab";
 export { PartItem } from "./items/part-item/PartItem";
 export type { PartItemProps } from "./items/part-item/PartItem";
-export {
-  PartSelectionSection,
-  PartSelectionSection as PartList
-} from "./lists/part-selection-section/PartSelectionSection";
-export type {
-  PartSelectionSectionProps,
-  PartSelectionSectionProps as PartListProps
-} from "./lists/part-selection-section/PartSelectionSection";
+export { PartSelectionSection } from "./lists/part-selection-section/PartSelectionSection";
+export type { PartSelectionSectionProps } from "./lists/part-selection-section/PartSelectionSection";
 export type { AtchapickPartItemData } from "../contracts/parts/AtchapickPartItem";
 export type { PartItemData } from "../contracts/parts/PartItem";
 export { ServiceItem } from "./items/service-item/ServiceItem";
@@ -162,14 +135,8 @@ export { ServiceMenuSection } from "./sections/service-menu-section/ServiceMenuS
 export type { ServiceMenuSectionProps } from "./sections/service-menu-section/ServiceMenuSection";
 export { ShopItem } from "./items/shop-item/ShopItem";
 export type { ShopItemProps } from "./items/shop-item/ShopItem";
-export {
-  ShopListSection,
-  ShopListSection as ShopList
-} from "./lists/shop-list-section/ShopListSection";
-export type {
-  ShopListSectionProps,
-  ShopListSectionProps as ShopListProps
-} from "./lists/shop-list-section/ShopListSection";
+export { ShopListSection } from "./lists/shop-list-section/ShopListSection";
+export type { ShopListSectionProps } from "./lists/shop-list-section/ShopListSection";
 export type { ShopItemData, ShopTimeSlotData } from "../contracts/shop/ShopItem";
 export { StatusItem, defaultStatusItemIcon } from "./items/status-item/StatusItem";
 export type { StatusItemProps } from "./items/status-item/StatusItem";

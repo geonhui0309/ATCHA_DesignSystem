@@ -1,1 +1,0 @@
-const a={parameters:{layout:"padded",controls:{matchers:{color:/(background|color)$/i,date:/Date$/i}},backgrounds:{default:"canvas",values:[{name:"canvas",value:"#f5f5f5"},{name:"white",value:"#ffffff"}]}}};export{a as default};

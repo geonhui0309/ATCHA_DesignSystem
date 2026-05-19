@@ -1,6 +1,0 @@
-import{j as r}from"./jsx-runtime-Cf8x2fCZ.js";import"./AuthorityList-mdyXqtfH.js";import"./PartSelectionSection-ChbumDMb.js";import"./Button-DATDQKqp.js";import{k as o}from"./VehicleStatusCard-DDsJ1VsL.js";import"./ShopListSection-BZIMYLK-.js";import"./DiagnosticCodeList-JBW8ZL6U.js";import"./DiagnosticListSection-ToosHBAk.js";import"./HistoryTimelineSection-DkW6C5ZR.js";import"./Icon-DDBEd_Ks.js";import"./AdditionalServiceSection-CEWN0rH6.js";import"./ServiceBanner-Dv75Vpso.js";import"./ServiceMenuSection-KWgjPlNR.js";import"./Thumbnail-B1U3-C7m.js";import"./VehicleWarningSection-wK1Govq6.js";import{S as p}from"./story-helpers-BoPyVYcm.js";import"./index-yBjzXJbu.js";import"./foundation-BkMwuzeQ.js";import"./assets-CYzlDjnP.js";const D={title:"Components/Navigation/GlobalNavigationBarItem",component:o,render:m=>r.jsx(p,{width:78,children:r.jsx("div",{style:{width:78},children:r.jsx(o,{...m})})})},t={args:{label:"홈",active:!0}};var a,i,e;t.parameters={...t.parameters,docs:{...(a=t.parameters)==null?void 0:a.docs,source:{originalSource:`{
-  args: {
-    label: "홈",
-    active: true
-  }
-}`,...(e=(i=t.parameters)==null?void 0:i.docs)==null?void 0:e.source}}};const E=["Default"];export{t as Default,E as __namedExportsOrder,D as default};

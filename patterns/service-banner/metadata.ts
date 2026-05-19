@@ -4,7 +4,7 @@ export const serviceBannerMetadata: PatternMetadata = {
   name: "ServiceBanner",
   purpose: "예약 상태나 정비 진행 상태를 상단 배너로 강조한다.",
   useWhen: [
-    "현재 예약/정비 상태를 화면 상단에서 가장 먼저 알려줘야 할 때",
+    "현재 예정된 예약 혹은 진행중인 정비가 존재할때 해당 상태를 화면 상단에서 가장 먼저 알려줘야 할 때",
     "시간, 잔여 진행 상태, 금액 같은 핵심 정보를 요약할 때"
   ],
   avoidWhen: [
