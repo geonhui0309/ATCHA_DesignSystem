@@ -27,7 +27,7 @@ const defaultCategories: ServiceMenuItemCategory[] = [
 ];
 
 export function ServiceMenuSection({
-  title = "정비소 예약"
+  title = "정비소 예약",
   actionLabel = "더보기",
   categories = defaultCategories,
   variant = "default",
