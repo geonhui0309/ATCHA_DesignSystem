@@ -8,7 +8,7 @@ Reference / Example
 
 - 1 Depth: `DIAG`
 - 2 Depth: `MAIN`
-- 3 Depth: `-`
+
 
 ## Figma 기준
 

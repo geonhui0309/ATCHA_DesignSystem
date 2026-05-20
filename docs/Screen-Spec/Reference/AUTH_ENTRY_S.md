@@ -8,7 +8,7 @@ Reference / Example
 
 - 1 Depth: `AUTH`
 - 2 Depth: `ENTRY`
-- 3 Depth: `-`
+
 
 ## Figma 기준
 

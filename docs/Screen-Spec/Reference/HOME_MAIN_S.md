@@ -8,7 +8,7 @@ Reference / Example
 
 - 1 Depth: `HOME`
 - 2 Depth: `MAIN`
-- 3 Depth: `-`
+
 
 ## Figma 기준
 

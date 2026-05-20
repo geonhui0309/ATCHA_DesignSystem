@@ -26,13 +26,7 @@ export function InputFieldWithButton({
         size={inputSize}
         placeholder="Hint_Text"
         helperText="Caption"
-        trailingIcons={
-          inputSize === "medium"
-            ? ["home", "home"]
-            : inputSize === "small"
-              ? ["cancel", "cancelMuted"]
-              : undefined
-        }
+        trailingIcons={inputSize === "small" ? ["cancel", "cancelMuted"] : undefined}
         {...inputProps}
       />
       <Button variant="filled" size="small">

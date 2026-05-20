@@ -8,7 +8,7 @@ Reference / Example
 
 - 1 Depth: `RSV`
 - 2 Depth: `COMPLETE`
-- 3 Depth: `-`
+
 
 ## Figma 기준
 
