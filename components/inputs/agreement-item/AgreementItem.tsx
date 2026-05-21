@@ -65,6 +65,7 @@ export function AgreementItem({
         <button
           type="button"
           aria-expanded={expanded}
+          aria-label={expanded ? "약관 내용 접기" : "약관 내용 펼치기"}
           className={cx("ds-agreement-item__disclosure", disclosureClassName)}
           {...restDisclosureButtonProps}
         >

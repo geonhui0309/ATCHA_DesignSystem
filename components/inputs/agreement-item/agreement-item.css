@@ -1,8 +1,10 @@
 .ds-agreement-item {
   display: flex;
-  width: 100%;
+  width: 312px;
+  padding: 0 var(--spacing-8);
   flex-direction: column;
   align-items: stretch;
+  box-sizing: border-box;
 }
 
 .ds-agreement-item__row {
@@ -11,7 +13,7 @@
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  padding: var(--spacing-8);
+  padding: var(--spacing-8) 0;
   box-sizing: border-box;
 }
 
@@ -74,9 +76,10 @@
   display: flex;
   min-width: 0;
   flex: 1 0 0;
-  max-height: 200px;
+  height: 200px;
   overflow-x: hidden;
   overflow-y: auto;
+  scrollbar-gutter: stable;
 }
 
 .ds-agreement-item__detail-text {
