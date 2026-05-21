@@ -3,8 +3,8 @@
   align-items: center;
   gap: var(--spacing-12);
   width: 312px;
-  height: 68px;
-  padding: 0 var(--spacing-24);
+  min-height: 68px;
+  padding: var(--spacing-16) var(--spacing-24);
   border-radius: var(--radius-medium);
   background: var(--background-surface-primary);
   box-sizing: border-box;
