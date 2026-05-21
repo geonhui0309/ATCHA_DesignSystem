@@ -1,6 +1,7 @@
 export * from "./accident-report-summary-list";
 export * from "./authority-list";
 export * from "./diagnostic-code-list";
+export * from "./diagnostic-summary-list";
 export * from "./diagnostic-list-section";
 export * from "./history-timeline-section";
 export * from "./additional-service-section";

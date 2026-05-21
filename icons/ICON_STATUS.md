@@ -73,7 +73,7 @@
 ## Still remote / not yet migrated
 - `VehicleWarningSection`
 - `AuthorityItem`
-- `StatusItem`
+- `DiagnosticDetailItem`
 - `RecommendCard`
 - `Thumbnail`
 - `NavigationBar` logo asset

@@ -5,15 +5,17 @@
 @import "./lists/accident-report-summary-list/accident-report-summary-list.css";
 @import "./lists/authority-list/authority-list.css";
 @import "./items/accident-report-summary-item/accident-report-summary-item.css";
-@import "./items/status-item/status-item.css";
+@import "./items/diagnostic-detail-item/diagnostic-detail-item.css";
 @import "./items/atchapick-part-item/atchapick-part-item.css";
 @import "./inputs/button/button.css";
 @import "./inputs/checkbox/checkbox.css";
+@import "./inputs/agreement-item/agreement-item.css";
 @import "./inputs/choice-chip/choice-chip.css";
 @import "./display/category-label/category-label.css";
 @import "./display/dot-badge/dot-badge.css";
 @import "./cards/diag-action-card/diag-action-card.css";
 @import "./lists/diagnostic-code-list/diagnostic-code-list.css";
+@import "./lists/diagnostic-summary-list/diagnostic-summary-list.css";
 @import "./cards/diag-report-card/diag-report-card.css";
 @import "./inputs/filter-chip/filter-chip.css";
 @import "./navigation/global-navigation-bar/global-navigation-bar.css";
@@ -43,6 +45,7 @@
 @import "./items/part-item/part-item.css";
 @import "./lists/part-selection-section/part-selection-section.css";
 @import "./items/diag-item/diag-item.css";
+@import "./items/diagnostic-summary-item/diagnostic-summary-item.css";
 @import "./lists/diagnostic-list-section/diagnostic-list-section.css";
 @import "./lists/shop-list-section/shop-list-section.css";
 @import "./cards/vehicle-status-card/vehicle-status-card.css";

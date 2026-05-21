@@ -1,4 +1,4 @@
-.ds-status-item {
+.ds-diagnostic-detail-item {
   display: flex;
   align-items: center;
   gap: var(--spacing-12);
@@ -8,7 +8,7 @@
   background: var(--background-surface-primary);
 }
 
-.ds-status-item__icon {
+.ds-diagnostic-detail-item__icon {
   display: block;
   width: 40px;
   height: 40px;
@@ -16,7 +16,7 @@
   flex: 0 0 auto;
 }
 
-.ds-status-item__content {
+.ds-diagnostic-detail-item__content {
   display: flex;
   flex: 1 0 0;
   min-width: 0;
@@ -26,7 +26,7 @@
   justify-content: center;
 }
 
-.ds-status-item__title {
+.ds-diagnostic-detail-item__title {
   width: 100%;
   color: var(--text-primary);
   font-family: var(--font-families-asta-sans), sans-serif;
@@ -35,7 +35,7 @@
   line-height: var(--line-height-3);
 }
 
-.ds-status-item__description {
+.ds-diagnostic-detail-item__description {
   width: 100%;
   color: var(--text-primary);
   font-family: var(--font-families-asta-sans), sans-serif;

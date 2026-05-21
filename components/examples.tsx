@@ -36,7 +36,7 @@ import {
   ServiceMenuSection,
   ShopItem,
   ShopListSection,
-  StatusItem,
+  DiagnosticDetailItem,
   Thumbnail,
   VehicleStatusCard,
   VehicleWarningSection
@@ -107,7 +107,7 @@ export function DesignSystemExamples() {
       <AuthorityList />
       <DiagCodeItem />
       <DiagnosticCodeList />
-      <StatusItem />
+      <DiagnosticDetailItem />
       <IconButton size="large" />
       <IconButton size="medium" state="pressed" />
       <IconButton size="small" state="disabled" />

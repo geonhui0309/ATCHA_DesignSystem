@@ -23,6 +23,12 @@ export type {
 export { Button } from "./inputs/button";
 export type { ButtonProps } from "./inputs/button";
 
+export { AgreementItem } from "./inputs/agreement-item/AgreementItem";
+export type {
+  AgreementItemProps,
+  AgreementSelectionType
+} from "./inputs/agreement-item/AgreementItem";
+
 export { Checkbox } from "./inputs/checkbox/Checkbox";
 export type { CheckboxProps } from "./inputs/checkbox/Checkbox";
 
@@ -45,11 +51,23 @@ export { DiagCodeItem } from "./items/diag-code-item/DiagCodeItem";
 export type { DiagCodeItemProps } from "./items/diag-code-item/DiagCodeItem";
 export { DiagItem } from "./items/diag-item/DiagItem";
 export type { DiagItemProps } from "./items/diag-item/DiagItem";
+export { DiagnosticSummaryItem } from "./items/diagnostic-summary-item/DiagnosticSummaryItem";
+export type {
+  DiagnosticSummaryItemProps
+} from "./items/diagnostic-summary-item/DiagnosticSummaryItem";
 export { DiagnosticListSection } from "./lists/diagnostic-list-section/DiagnosticListSection";
 export type { DiagnosticListSectionProps } from "./lists/diagnostic-list-section/DiagnosticListSection";
 export { DiagnosticCodeList } from "./lists/diagnostic-code-list/DiagnosticCodeList";
 export type { DiagnosticCodeListProps } from "./lists/diagnostic-code-list/DiagnosticCodeList";
+export { DiagnosticSummaryList } from "./lists/diagnostic-summary-list/DiagnosticSummaryList";
+export type {
+  DiagnosticSummaryListProps
+} from "./lists/diagnostic-summary-list/DiagnosticSummaryList";
 export type { DiagCodeItemData } from "../contracts/diagnostic/DiagCodeItem";
+export type {
+  DiagnosticSummaryItemData,
+  DiagnosticSummaryStatus
+} from "../contracts/diagnostic/DiagnosticSummaryItem";
 export { DiagReportCard } from "./cards/diag-report-card/DiagReportCard";
 
 export { FilterChip } from "./inputs/filter-chip";
@@ -147,8 +165,13 @@ export type { ShopItemProps } from "./items/shop-item/ShopItem";
 export { ShopListSection } from "./lists/shop-list-section/ShopListSection";
 export type { ShopListSectionProps } from "./lists/shop-list-section/ShopListSection";
 export type { ShopItemData, ShopTimeSlotData } from "../contracts/shop/ShopItem";
-export { StatusItem, defaultStatusItemIcon } from "./items/status-item/StatusItem";
-export type { StatusItemProps } from "./items/status-item/StatusItem";
+export {
+  DiagnosticDetailItem,
+  defaultDiagnosticDetailItemIcon
+} from "./items/diagnostic-detail-item/DiagnosticDetailItem";
+export type {
+  DiagnosticDetailItemProps
+} from "./items/diagnostic-detail-item/DiagnosticDetailItem";
 
 export { Thumbnail } from "./display/thumbnail/Thumbnail";
 export type { ThumbnailProps, ThumbnailVariant } from "./display/thumbnail/Thumbnail";

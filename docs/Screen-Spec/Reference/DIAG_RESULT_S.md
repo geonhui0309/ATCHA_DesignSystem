@@ -28,22 +28,32 @@ Reference / Example
 ## 사용된 patterns
 
 - `DiagnosticCodeList`
-- `VehicleWarningSection`
 
 ## 사용된 components
 
 - `NavigationBar`
 - `PageSection`
 - `Button`
-- `Thumbnail`
+- `DiagReportCard`
+- `DiagnosticDetailItem`
 
 ## 상태 variation
 
 - 경고 개수 요약
 - 점검 필요/주의/양호 카운트 분리
-- 경고등 카드 목록
+- 경고등 item 목록
+- 교체 필요 item 목록
 - 진단 코드 요약 및 하단 2CTA
+
+## 화면 구조
+
+- 상단 요약 영역은 `DiagReportCard`로 구성된다.
+- `점등된 경고등` 영역은 섹션 제목 아래에 `DiagnosticDetailItem`이 반복되는 구조로 배치된다.
+- `진단 코드 분석` 영역은 `DiagnosticCodeList`로 구성된다.
+- `교체 필요 항목` 영역도 현재는 `DiagnosticDetailItem`과 동일한 row 구조를 사용한다.
+- 하단에는 `돌아가기`, `정비소 예약`의 2CTA가 배치된다.
 
 ## AI 참고 포인트
 
 - 일반 사용자용 요약 정보와 전문가용 진단 코드가 한 화면에 함께 존재한다.
+- 현재 화면의 `점등된 경고등`과 `교체 필요 항목`은 둘 다 얇은 `DiagnosticDetailItem` 반복 구조로 읽는 편이 맞다.

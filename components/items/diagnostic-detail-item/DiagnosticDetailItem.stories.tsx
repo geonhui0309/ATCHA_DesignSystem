@@ -1,17 +1,17 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { AccidentReportSummaryItem } from "../../index";
+import { DiagnosticDetailItem } from "../../index";
 import { StoryCanvas } from "../../shared/story-helpers";
 
 const meta = {
-  title: "Components/Items/AccidentReportSummaryItem",
-  component: AccidentReportSummaryItem,
+  title: "Components/Items/DiagnosticDetailItem",
+  component: DiagnosticDetailItem,
   render: (args) => (
     <StoryCanvas width={312}>
-      <AccidentReportSummaryItem {...args} />
+      <DiagnosticDetailItem {...args} />
     </StoryCanvas>
   )
-} satisfies Meta<typeof AccidentReportSummaryItem>;
+} satisfies Meta<typeof DiagnosticDetailItem>;
 
 export default meta;
 

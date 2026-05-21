@@ -4,6 +4,10 @@ export type { AuthorityItemData } from "./authority/AuthorityItem";
 
 export type { DiagCodeItemData } from "./diagnostic/DiagCodeItem";
 export type { DiagItemData } from "./diagnostic/DiagItem";
+export type {
+  DiagnosticSummaryItemData,
+  DiagnosticSummaryStatus
+} from "./diagnostic/DiagnosticSummaryItem";
 
 export type { AccidentReportSummaryItemData } from "./history/AccidentReportSummaryItem";
 export type { HistoryItemData } from "./history/HistoryItem";
