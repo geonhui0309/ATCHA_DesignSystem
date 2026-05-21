@@ -22,7 +22,7 @@ const meta = {
     detailText
   },
   render: (args) => (
-    <StoryCanvas width={312}>
+    <StoryCanvas width={316}>
       <AgreementItem {...args} />
     </StoryCanvas>
   )
@@ -33,9 +33,3 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {};
-
-export const Expanded: Story = {
-  args: {
-    expanded: true
-  }
-};

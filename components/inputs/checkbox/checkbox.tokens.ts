@@ -19,7 +19,7 @@ export const checkboxTokens = {
     }
   },
   label: {
-    gap: "var(--spacing-8)",
+    gap: "var(--spacing-4)",
     fontFamily: "var(--font-families-asta-sans), sans-serif",
     fontSize: "var(--font-size-2)",
     lineHeight: "var(--line-height-3)",
