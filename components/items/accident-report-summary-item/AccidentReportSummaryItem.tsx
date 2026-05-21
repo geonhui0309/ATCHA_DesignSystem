@@ -8,7 +8,7 @@ import { cx } from "../../shared/foundation";
 import "./accident-report-summary-item.css";
 
 const ACCIDENT_REPORT_SUMMARY_STATUS_LABEL: Record<AccidentReportSummaryStatus, string> = {
-  processing: "처리중",
+  processing: "진행중",
   completed: "완료"
 } as const;
 
