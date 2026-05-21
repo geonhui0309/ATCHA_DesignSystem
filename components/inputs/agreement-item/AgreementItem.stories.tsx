@@ -22,7 +22,7 @@ const meta = {
     detailText
   },
   render: (args) => (
-    <StoryCanvas width={316}>
+    <StoryCanvas width={312}>
       <AgreementItem {...args} />
     </StoryCanvas>
   )

@@ -21,7 +21,7 @@ export const checkboxTokens = {
   label: {
     gap: "var(--spacing-4)",
     fontFamily: "var(--font-families-asta-sans), sans-serif",
-    fontSize: "var(--font-size-2)",
+    fontSize: "var(--font-size-3)",
     lineHeight: "var(--line-height-3)",
     fontWeight: FONT_WEIGHT_MAP.SemiBold,
     color: "var(--text-primary)",
