@@ -13,8 +13,8 @@
 
 완료 여부가 `X`인 화면 문서를 둔다.
 
-- 목적: 아직 미완성이거나 새로 생성이 필요한 화면 spec 정리
-- 활용: prompt와 함께 직접 전달하는 생성 입력
+- 목적: 아직 미완성이거나 새로 생성이 필요한 화면 spec을 정리하기 위함
+- 활용: 저장소 안의 generate spec 자산으로 보관하거나, 동일한 형식의 md를 대화창에 직접 전달할 때 기준으로 사용
 
 ## 작성 규칙
 
@@ -22,6 +22,7 @@
 - 예: `AUTH_ENTRY_S.md`, `RSV_CONFIRM_S.md`
 - `Reference` 문서는 Figma 링크와 해석 중심으로 작성한다.
 - `Generate` 문서는 입력 요구사항과 생성 규칙 중심으로 작성한다.
+- 실제 생성 시에는 `Generate` 폴더 문서를 그대로 사용해도 되고, 같은 형식의 신규 md를 대화창 입력으로 직접 전달해도 된다.
 
 ## 현재 분류 기준
 
@@ -33,8 +34,6 @@
 - `AUTH_SIGNUP_INPUT_S`
 - `AUTH_SIGNUP_PERMISSION_S`
 - `HOME_MAIN_S`
-- `HOME_ALERT_DETAIL_S`
-- `HOME_MAINTENANCE_DETAIL_S`
 - `DIAG_MAIN_S`
 - `DIAG_PROGRESS_S`
 - `DIAG_RESULT_S`
@@ -44,11 +43,9 @@
 - `RSV_ITEM_DETAIL_S`
 - `RSV_GARAGE_LIST_S`
 - `RSV_GARAGE_MAP_S`
-- `RSV_SCHEDULE_SELECT_S`
 - `RSV_CONFIRM_S`
 - `RSV_COMPLETE_S`
 - `RCD_MAIN_S`
-- `MYP_MAIN_S`
 
 ### Generate
 
@@ -56,11 +53,14 @@
 - `AUTH_SIGNUP_COMPLETE_S`
 - `AUTH_FIND_ID_S`
 - `AUTH_FIND_PASSWORD_S`
+- `HOME_ALERT_DETAIL_S`
 - `HOME_EMPTY_S`
 - `HOME_ERROR_S`
+- `HOME_MAINTENANCE_DETAIL_S`
 - `DIAG_ERROR_S`
 - `DIAG_EMPTY_S`
 - `DIAG_RESULT_EMPTY_S`
+- `MYP_MAIN_S`
 - `RSV_GARAGE_DETAIL_S`
 - `RSV_ERROR_S`
 - `RSV_EMPTY_S`

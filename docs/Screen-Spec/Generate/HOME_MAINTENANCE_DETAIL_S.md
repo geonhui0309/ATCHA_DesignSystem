@@ -2,7 +2,7 @@
 
 ## 문서 성격
 
-Reference / Example
+Generate / Input Spec
 
 ## IA 위치
 

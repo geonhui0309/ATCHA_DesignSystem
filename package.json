@@ -1,18 +1,24 @@
 {
   "name": "atcha_designsystem",
   "version": "1.0.0",
-  "description": "",
+  "description": "ATCHA design system package for AI-assisted screen generation.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
     "build:tokens": "style-dictionary build --config style-dictionary.config.js && node scripts/generate-nested-tokens.js",
-    "build:package": "tsc -p tsconfig.build.json && node scripts/copy-package-assets.cjs",
+    "build:package": "node scripts/clean-dist.cjs && tsc -p tsconfig.build.json && node scripts/copy-package-assets.cjs",
+    "pack:check": "npm pack --dry-run",
+    "prepare": "npm run build:tokens && npm run build:package",
+    "prepublishOnly": "npm run build:tokens && npm run typecheck && npm run build:package && npm run pack:check",
     "storybook": "storybook dev --ci --disable-telemetry",
     "build-storybook": "storybook build --disable-telemetry",
     "postbuild-storybook": "node scripts/fix-storybook-preview-chunks.cjs",
     "typecheck": "tsc --noEmit",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "sideEffects": [
+    "**/*.css"
+  ],
   "files": [
     "dist",
     "README.md"
@@ -43,14 +49,15 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "UNLICENSED",
   "type": "commonjs",
   "bugs": {
     "url": "https://github.com/geonhui0309/ATCHA_DesignSystem/issues"
   },
   "homepage": "https://github.com/geonhui0309/ATCHA_DesignSystem#readme",
-  "dependencies": {
-    "style-dictionary": "^5.4.0"
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^8.6.14",
@@ -60,6 +67,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "storybook": "^8.6.14",
+    "style-dictionary": "^5.4.0",
     "typescript": "^5.9.3",
     "vite": "^6.4.2"
   }

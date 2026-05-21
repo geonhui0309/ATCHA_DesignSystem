@@ -88,7 +88,6 @@
    - `RSV_GARAGE_LIST_S`
    - `RSV_GARAGE_MAP_S`
    - `RSV_GARAGE_DETAIL_S`
-   - `RSV_SCHEDULE_SELECT_S`
    - `RSV_CONFIRM_S`
    - `RSV_COMPLETE_S`
 4. 완료 조건: 사용자가 예약을 확정하고 완료 화면에 도달
@@ -139,7 +138,7 @@
 - `HOME_MAIN_S` -> `HOME_MAINTENANCE_DETAIL_S`: 정비 상태 상세 진입 시
 - `DIAG_MAIN_S` -> `DIAG_PROGRESS_S`: 진단 실행 시
 - `DIAG_PROGRESS_S` -> `DIAG_RESULT_S`: 진단 완료 시
-- `RSV_SCHEDULE_SELECT_S` -> `RSV_CONFIRM_S`: 일정 선택 완료 시
+- `RSV_GARAGE_DETAIL_S` -> `RSV_CONFIRM_S`: 정비소 상세 선택 완료 시
 - `RSV_CONFIRM_S` -> `RSV_COMPLETE_S`: 예약 확정 시
 - `RCD_MAIN_S` -> `RCD_SERVICE_DETAIL_S`: 정비 이력 상세 진입 시
 - `RCD_MAIN_S` -> `RCD_DIAG_DETAIL_S`: 진단 이력 상세 진입 시

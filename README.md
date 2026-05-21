@@ -1,142 +1,96 @@
-# ATCHA Design Tokens
+# ATCHA Design System
 
-Design token source and build pipeline for ATCHA, including a component layer and a pattern/contract layer for AI-friendly composition.
+ATCHA의 화면 생성과 UI 구현을 위한 디자인 시스템 패키지입니다.
 
-## Overview
+이 패키지는 AI가 화면을 조립할 때 바로 사용할 수 있도록 다음 레이어를 함께 제공합니다.
 
-- Source tokens live in `tokens/`.
-- Tokens are compiled with Style Dictionary.
-- Build outputs are generated in `build/`:
-  - `build/css/tokens.css`
-  - `build/js/tokens.js`
+- `components`: 기본 UI 구현체
+- `patterns`: 화면 조합에 가까운 section/list 단위
+- `contracts`: 공유 데이터 shape와 타입
+- `styles.css`: 컴포넌트 공통 스타일
+- `tokens.css`: 디자인 토큰 CSS 변수
 
-## Project Structure
+## Package Goal
 
-```text
-components/
-contracts/
-patterns/
-├── index.css
-├── index.ts
-├── button/
-│   ├── Button.tsx
-│   ├── Button.styles.ts
-│   ├── Button.types.ts
-│   ├── button.css
-│   └── index.ts
-├── checkbox/
-│   ├── Checkbox.tsx
-│   ├── checkbox.css
-│   └── checkbox.tokens.ts
-├── global-navigation-bar/
-│   ├── GlobalNavigationBar.tsx
-│   ├── global-navigation-bar.css
-│   └── global-navigation-bar.tokens.ts
-├── icon-button/
-│   ├── IconButton.tsx
-│   ├── icon-button.css
-│   └── icon-button.tokens.ts
-├── input-field/
-│   ├── InputField.tsx
-│   ├── input-field.css
-│   └── input-field.tokens.ts
-├── navigation-bar/
-│   ├── NavigationBar.tsx
-│   ├── navigation-bar.css
-│   └── navigation-bar.tokens.ts
-├── radio-button/
-│   ├── RadioButton.tsx
-│   ├── radio-button.css
-│   └── radio-button.tokens.ts
-├── record-tab/
-│   ├── RecordTab.tsx
-│   ├── record-tab.css
-│   └── record-tab.tokens.ts
-├── service-menu-section/
-│   ├── ServiceMenuSection.tsx
-│   ├── service-menu-section.css
-│   └── service-menu-section.tokens.ts
-└── shared/
-    └── foundation.ts
-
-tokens/
-├── primitive/
-│   ├── color/
-│   ├── spacing.json
-│   ├── size.json
-│   ├── radius.json
-│   └── typography/
-│       ├── font-family.json
-│       ├── font-weight.json
-│       ├── font-size.json
-│       └── line-height.json
-├── semantic/
-│   ├── color/
-│   ├── space/
-│   ├── size.json
-│   └── typography/
-└── component/
-    └── button/
-```
+- ATCHA 화면을 코드로 일관되게 구현한다.
+- AI가 screen spec을 읽고 기존 UI를 우선 재사용할 수 있게 한다.
+- 필요 시 새 컴포넌트를 만들더라도 기존 token과 규칙 안에서 확장하게 한다.
 
 ## Install
 
 ```bash
-npm install
+npm install atcha_designsystem
 ```
 
-## Build Tokens
+`react`와 `react-dom`은 consumer app에서 직접 제공해야 합니다.
+
+## Exports
+
+```ts
+import { ScreenContainer, Button } from "atcha_designsystem/components";
+import { ServiceMenuSection } from "atcha_designsystem/patterns";
+import type { ServiceMenuItemContract } from "atcha_designsystem/contracts";
+
+import "atcha_designsystem/styles.css";
+import "atcha_designsystem/tokens.css";
+```
+
+공식 entrypoint는 아래만 사용합니다.
+
+- `atcha_designsystem`
+- `atcha_designsystem/components`
+- `atcha_designsystem/patterns`
+- `atcha_designsystem/contracts`
+- `atcha_designsystem/styles.css`
+- `atcha_designsystem/tokens.css`
+
+## AI Usage Rule
+
+AI가 이 패키지를 사용할 때는 아래 우선순위를 따릅니다.
+
+1. 기존 `patterns`가 있으면 우선 사용
+2. 없으면 `components`와 layout primitive로 조합
+3. 그래도 해결이 안 되면 새 컴포넌트를 생성
+
+새 컴포넌트를 만들 때는 반드시:
+
+- 기존 token을 우선 사용
+- 기존 naming 규칙을 따름
+- 기존 pattern과 충돌하는 새로운 시각 언어를 만들지 않음
+
+자세한 규칙은 [docs/DesignSystem.md](docs/DesignSystem.md) 와 [docs/Prompt.md](docs/Prompt.md) 를 참고합니다.
+
+## Build
 
 ```bash
 npm run build:tokens
+npm run build:package
 ```
 
-Build pipeline:
+## Publish Check
 
-1. `style-dictionary build --config style-dictionary.config.js`
-2. `scripts/generate-nested-tokens.js`
-   - converts raw JS output into nested token object export
-   - normalizes CSS units (`rem` -> `px`)
-   - normalizes `font-size` CSS variables to `px` when unitless
-   - removes intermediate `build/js/tokens.raw.js`
+퍼블리시 전에는 아래 명령으로 패키지 산출물을 확인합니다.
 
-## Output Format
-
-- CSS tokens are exposed as custom properties in `:root`.
-- JS tokens are exported as a nested object:
-
-```js
-import tokens from "./build/js/tokens.js";
-
-const primaryText = tokens.text.primary;
-const space16 = tokens.spacing["16"];
+```bash
+npm run prepublishOnly
 ```
 
-## Components
+이 과정에는 다음이 포함됩니다.
 
-- `components/` is the implementation layer that consumes generated design tokens.
-- `contracts/` defines reusable data shapes and shared value unions used across components and patterns.
-- `patterns/` provides section/list-level composition entrypoints with renamed pattern-first APIs and compatibility aliases for legacy names.
-- `patterns/registry.ts` and per-pattern `metadata.ts` provide AI-facing usage metadata for screen generation.
-- Components are now authored in `tsx` as the source of truth for web usage.
-- Preview-only HTML and DOM builder files are kept out of component folders so each component has a single implementation path.
-- `components/inputs/button/` is a token-connected primitive built from the current component token set.
-- `components/inputs/input-field/` and `components/inputs/checkbox/` are semantic-token-based web primitives added as the next layer while dedicated component tokens are still being defined.
-- `components/navigation/global-navigation-bar/` is connected from the Figma node `309:630` with Figma-derived sizing and remote icon assets.
-- `components/navigation/navigation-bar/`, `components/navigation/record-tab/`, `components/inputs/icon-button/`, and `components/inputs/radio-button/` are connected from Figma nodes `180:563`, `611:350`, `682:1806`, and `412:1124`.
-- `components/sections/service-menu-section/` is a web-first semantic component based on the Figma node `520:791`.
-- `filled` is bound to current component tokens.
-- `outlined` and `text` are temporary semantic-token variants until dedicated component tokens are defined.
+1. token build
+2. typecheck
+3. package build
+4. `npm pack --dry-run` 검증
 
-## Notes
+## Docs
 
-- Package entrypoints are exposed through `exports`:
-  - `atcha_designsystem`
-  - `atcha_designsystem/components`
-  - `atcha_designsystem/patterns`
-  - `atcha_designsystem/contracts`
-  - `atcha_designsystem/styles.css`
-  - `atcha_designsystem/tokens.css`
-- `build/js/tokens.raw.js` is intentionally ignored and deleted after each build.
-- If you change token paths, keep alias references (`{...}`) consistent with actual token keys.
-- Current font-weight token values are exported as names such as `SemiBold`, so component code currently maps them to numeric CSS weights where needed.
+문서 진입점:
+
+- [docs/README.md](docs/README.md)
+- [docs/DesignSystem.md](docs/DesignSystem.md)
+- [docs/Prompt.md](docs/Prompt.md)
+- [docs/Screen-Spec/README.md](docs/Screen-Spec/README.md)
+
+## License
+
+이 패키지는 현재 `UNLICENSED`로 설정되어 있으며, 공개 오픈소스 배포를 전제로 하지 않습니다.

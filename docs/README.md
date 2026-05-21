@@ -27,10 +27,10 @@
 ## Screen-Spec 구성
 
 - `Screen-Spec/Reference/`: 이미 Figma로 확정된 화면을 디자인 시스템 언어로 해석한 예시 문서
-- `Screen-Spec/Generate/`: AI가 실제로 생성할 신규 화면 spec 문서
+- `Screen-Spec/Generate/`: AI 화면 생성을 위한 spec 자산 또는 입력 문서
 
 ## 작성 원칙
 
 - 디자인 시스템에서 이미 존재하는 pattern과 component를 우선 사용한다.
-- 새 화면을 생성할 때는 `Prompt.md`와 `Screen-Spec/Generate/*`를 함께 사용한다.
+- 새 화면을 생성할 때는 `Prompt.md`와 `Screen-Spec/Generate/*`를 기준 자산으로 활용하거나, 같은 형식의 md를 대화창에 직접 입력으로 전달할 수 있다.
 - 이미 확정된 화면은 `Reference` 문서로 정리하고, Figma 링크와 사용 패턴 매핑을 남긴다.

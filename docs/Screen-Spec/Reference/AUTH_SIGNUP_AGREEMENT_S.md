@@ -24,6 +24,10 @@ Reference / Example
 - 사용자는 약관을 검토하고 동의 여부를 선택한다.
 - 사용자는 각 약관 row의 펼치기 버튼을 눌러 상세 본문을 확인한다.
 
+## 사용된 patterns
+
+- 별도 section pattern 없이 `AgreementItem` 반복 구조 중심
+
 ## 사용된 components
 
 - `AgreementItem`
@@ -48,3 +52,4 @@ Reference / Example
 
 - 이 화면은 단순 `Checkbox` 리스트가 아니라 `AgreementItem` 반복 구조로 해석하는 편이 맞다.
 - 약관 본문은 별도 상세 페이지 이동보다 inline expand/collapse 구조로 이해한다.
+- 전체 동의 row와 개별 약관 row는 모두 같은 계열의 agreement component로 묶어 보는 편이 일관적이다.

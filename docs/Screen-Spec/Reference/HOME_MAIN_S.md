@@ -26,6 +26,7 @@ Reference / Example
 
 ## 사용된 patterns
 
+- `ServiceBanner`
 - `VehicleWarningSection`
 - `ServiceMenuSection`
 - `AdditionalServiceSection`
@@ -44,7 +45,16 @@ Reference / Example
 - 경고등 요약 섹션
 - 최근 소모품 교체 이력 강조
 
+## 화면 구조
+
+- 상단에는 현재 차량 또는 정비 상태를 빠르게 보여주는 `ServiceBanner`가 배치된다.
+- 배너 아래에는 차량 상태 요약이나 경고등 강조를 위한 `VehicleWarningSection`이 이어진다.
+- 중간 본문에는 주요 서비스 진입을 위한 `ServiceMenuSection`이 핵심 패턴으로 배치된다.
+- 그 아래에는 보조 서비스나 부가 메뉴 진입을 위한 `AdditionalServiceSection`이 뒤따른다.
+- 최하단에는 앱 전역 이동을 위한 `GlobalNavigationBar`가 고정된다.
+
 ## AI 참고 포인트
 
 - 홈은 허브 역할이며 패턴 중심 조립이 핵심이다.
+- `HOME_MAIN_S`는 primitive 조합보다 `ServiceBanner -> VehicleWarningSection -> ServiceMenuSection -> AdditionalServiceSection` 순서의 패턴 조합으로 해석하는 편이 더 안정적이다.
 - 상단 차량 요약과 하단 탭 내비게이션 사이에 서비스 진입 섹션이 반복 배치된다.
