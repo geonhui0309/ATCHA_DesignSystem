@@ -2,7 +2,9 @@
 @import "./layout/screen-container/screen-container.css";
 @import "./layout/stack/stack.css";
 @import "./layout/page-section/page-section.css";
+@import "./lists/accident-report-summary-list/accident-report-summary-list.css";
 @import "./lists/authority-list/authority-list.css";
+@import "./items/accident-report-summary-item/accident-report-summary-item.css";
 @import "./items/status-item/status-item.css";
 @import "./items/atchapick-part-item/atchapick-part-item.css";
 @import "./inputs/button/button.css";

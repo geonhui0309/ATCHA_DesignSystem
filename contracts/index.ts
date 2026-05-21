@@ -5,6 +5,7 @@ export type { AuthorityItemData } from "./authority/AuthorityItem";
 export type { DiagCodeItemData } from "./diagnostic/DiagCodeItem";
 export type { DiagItemData } from "./diagnostic/DiagItem";
 
+export type { AccidentReportSummaryItemData } from "./history/AccidentReportSummaryItem";
 export type { HistoryItemData } from "./history/HistoryItem";
 
 export type { AtchapickPartItemData } from "./parts/AtchapickPartItem";

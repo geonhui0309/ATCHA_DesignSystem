@@ -1,3 +1,4 @@
+import { accidentReportSummaryListMetadata } from "./accident-report-summary-list/metadata";
 import { additionalServiceSectionMetadata } from "./additional-service-section/metadata";
 import { authorityListMetadata } from "./authority-list/metadata";
 import { diagnosticCodeListMetadata } from "./diagnostic-code-list/metadata";
@@ -10,6 +11,7 @@ import { shopListSectionMetadata } from "./shop-list-section/metadata";
 import { vehicleWarningSectionMetadata } from "./vehicle-warning-section/metadata";
 
 export const patternMetadataRegistry = [
+  accidentReportSummaryListMetadata,
   additionalServiceSectionMetadata,
   authorityListMetadata,
   diagnosticCodeListMetadata,

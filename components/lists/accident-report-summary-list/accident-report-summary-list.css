@@ -1,0 +1,4 @@
+.ds-accident-report-summary-list {
+  display: flex;
+  flex-direction: column;
+}

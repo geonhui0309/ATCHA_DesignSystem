@@ -12,9 +12,38 @@ Reference / Example
 
 ## Figma 기준
 
-- 링크:
-- 마지막 확인 기준:
+- 링크: Figma 링크 미기입, `Record_MAIN.png`, `Record_MAIN-1.png`, `Record_MAIN-2.png`, `Record_MAIN-3.png` 스크린샷 기준 해석
+- 마지막 확인 기준: 2026-05-21 제공 스크린샷 4종을 `RCD_MAIN_S` 상태 variation으로 묶어 확인
 
 ## 화면 목적
 
 - 정비 이력과 진단 이력의 메인 진입점 역할을 한다.
+
+## 주요 사용자 시나리오
+
+- 사용자는 예약된 정비 또는 진행중인 정비 상태를 우선 확인한다.
+- 사용자는 `정비 내역`과 `진단 내역` 탭을 전환한다.
+- 사용자는 기간 필터를 바꿔 과거 이력을 탐색한다.
+
+## 사용된 patterns
+
+- `HistoryTimelineSection`
+- `ServiceBanner`
+
+## 사용된 components
+
+- `NavigationBar`
+- `RecordTab`
+- `GlobalNavigationBar`
+- `PageSection`
+
+## 상태 variation
+
+- 진행중인 정비 배너 노출
+- 예약된 정비 카드 노출
+- 정비 내역 리스트 탭 활성
+- 진단 내역 리스트 탭 활성
+
+## AI 참고 포인트
+
+- 하나의 메인 화면 안에서 배너 유무와 탭 내용이 바뀌는 구조라, 별도 상세 화면보다는 메인 variation으로 해석하는 편이 안전하다.
