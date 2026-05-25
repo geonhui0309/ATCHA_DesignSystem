@@ -27,6 +27,7 @@
 1. 먼저 `patterns`에 적합한 블록이 있는지 확인한다.
 2. 패턴이 없으면 `components`의 layout primitive와 component로 조립한다.
 3. 임의 div/margin보다 `ScreenContainer`, `Stack`, `PageSection`을 우선 사용한다.
+4. 기존 pattern과 component의 내부 카피, 강조 표현, 배치 의미를 임의로 변경하지 않는다.
 
 ## 새 컴포넌트 생성 규칙
 
@@ -62,6 +63,15 @@
 - typography token 대신 임의 font-size, line-height를 남발하지 않는다.
 - 기존 pattern으로 충분히 해결 가능한 구조를 중복 component로 만들지 않는다.
 - 새 컴포넌트를 위해 기존 시스템과 충돌하는 새로운 시각 언어를 추가하지 않는다.
+- spec에 없는 sticky, floating, bottom-fixed UI를 임의로 추가하지 않는다.
+- component 내부의 샘플 카피나 기본값을 실데이터 contract로 오인한 채 화면 구조를 확장하지 않는다.
+- contract에 없는 상태값, badge, 보조 문구, 아이콘 해석을 임의로 추가하지 않는다.
+
+## 산출물 검증 규칙
+
+- `patterns`를 사용하기 전에는 published dist 산출물에 실제 export 파일이 존재하는지 확인한다.
+- `index.d.ts`의 export 목록과 실제 dist 디렉터리 구조가 다르면, 문서 규칙보다 실제 산출물을 우선 기준으로 판단한다.
+- storybook에 노출된 pattern이라도 npm 산출물에 빠져 있으면 consumer app에서는 직접 import하지 않는다.
 
 ## metadata 활용 규칙
 

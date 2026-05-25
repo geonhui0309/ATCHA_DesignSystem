@@ -34,3 +34,10 @@
 - 디자인 시스템에서 이미 존재하는 pattern과 component를 우선 사용한다.
 - 새 화면을 생성할 때는 `Prompt.md`와 `Screen-Spec/Generate/*`를 기준 자산으로 활용하거나, 같은 형식의 md를 대화창에 직접 입력으로 전달할 수 있다.
 - 이미 확정된 화면은 `Reference` 문서로 정리하고, Figma 링크와 사용 패턴 매핑을 남긴다.
+
+## AI 주의사항
+
+- screen spec에 없는 sticky, floating, bottom-fixed UI는 임의로 추가하지 않는다.
+- 디자인 시스템 component와 pattern의 내부 카피, 강조 표현, 레이아웃 의미를 임의로 바꾸지 않는다.
+- component prop 이름만 보고 의미를 추정하지 않고, 실제 contract와 구현 파일을 함께 확인한다.
+- published pattern export와 실제 산출물이 다를 수 있으므로, import 전 dist 산출물과 storybook 노출 상태를 함께 확인한다.

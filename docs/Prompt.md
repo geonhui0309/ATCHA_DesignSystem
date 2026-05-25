@@ -17,6 +17,8 @@
 - 임의 CSS보다 token과 기존 컴포넌트 스타일을 우선 사용한다.
 - 기존 naming과 export surface를 존중한다.
 - 화면 구조는 `ScreenContainer`, `Stack`, `PageSection` 기준으로 안정화한다.
+- spec에 명시되지 않은 sticky, floating, 강조 박스, 보조 배지, 추가 안내문을 임의로 넣지 않는다.
+- 디자인 시스템 component와 pattern의 내부 카피, 강조 표현, 레이아웃을 임의로 재해석하지 않는다.
 
 ## 새 컴포넌트 허용 규칙
 
@@ -32,6 +34,12 @@
 - layout은 `ScreenContainer`, `Stack`, `PageSection`과 함께 쓸 수 있어야 한다.
 - 기존 pattern을 대체하는 경우 왜 대체가 필요한지 설명 가능해야 한다.
 
+## 사전 검증 체크
+
+- 사용하려는 pattern이 실제 published dist에 존재하는지 확인한다.
+- component가 내부 샘플 카피를 갖는지, 실데이터 prop을 받는지 구현 파일을 확인한다.
+- 문구 길이 제한이 spec에 없으면 짧은 기본값을 유지하고 자의적으로 설명을 늘리지 않는다.
+
 ## import 규칙
 
 - `atcha_designsystem/components`
@@ -45,6 +53,8 @@
 - 기존 contract를 무시하고 임의 데이터 shape를 만들지 않는다.
 - token에 없는 색상, spacing, typography 값을 무분별하게 직접 추가하지 않는다.
 - 화면 하나만을 위해 중복되는 새 컴포넌트를 불필요하게 만들지 않는다.
+- spec에 없는 sticky CTA, floating action, 고정 footer, 임의 강조 카드를 추가하지 않는다.
+- icon prop의 의미를 추정해서 이름 기반 매핑이나 임의 asset 치환을 하지 않는다.
 
 ## 출력 기대사항
 
