@@ -2,7 +2,8 @@ import { FONT_WEIGHT_MAP } from "../../shared/foundation";
 
 export const globalNavigationBarTokens = {
   container: {
-    width: "360px",
+    width: "100%",
+    maxWidth: "360px",
     height: "var(--size-15)",
     paddingInline: "var(--spacing-24)",
     paddingBlock: "var(--spacing-8)",

@@ -37,6 +37,7 @@ export function GlobalNavigationBar({
 }: GlobalNavigationBarProps) {
   const inlineStyle: CSSProperties = {
     width: globalNavigationBarTokens.container.width,
+    maxWidth: globalNavigationBarTokens.container.maxWidth,
     height: globalNavigationBarTokens.container.height,
     paddingInline: globalNavigationBarTokens.container.paddingInline,
     paddingBlock: globalNavigationBarTokens.container.paddingBlock,

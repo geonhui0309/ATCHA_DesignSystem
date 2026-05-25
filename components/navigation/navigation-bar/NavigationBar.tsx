@@ -29,6 +29,7 @@ export function NavigationBar({
 }: NavigationBarProps) {
   const inlineStyle: CSSProperties = {
     width: navigationBarTokens.width,
+    maxWidth: navigationBarTokens.maxWidth,
     height: navigationBarTokens.height,
     paddingInline: navigationBarTokens.paddingInline,
     paddingBlock: navigationBarTokens.paddingBlock,

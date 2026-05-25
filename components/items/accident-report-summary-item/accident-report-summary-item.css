@@ -2,7 +2,9 @@
   display: flex;
   align-items: center;
   gap: var(--spacing-12);
-  width: 312px;
+  width: 100%;
+  max-width: 312px;
+  margin-inline: auto;
   min-height: 68px;
   padding: var(--spacing-16) var(--spacing-24);
   border-radius: var(--radius-medium);
@@ -62,6 +64,8 @@
   font-weight: 600;
   line-height: var(--line-height-1);
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .ds-accident-report-summary-item__accident-title {
@@ -71,6 +75,8 @@
   font-weight: 500;
   line-height: var(--line-height-3);
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .ds-accident-report-summary-item__status {

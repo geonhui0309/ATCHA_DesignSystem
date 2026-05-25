@@ -4,7 +4,9 @@
   align-items: center;
   justify-content: center;
   gap: var(--spacing-16);
-  width: 360px;
+  width: 100%;
+  max-width: 360px;
+  box-sizing: border-box;
   height: 276px;
   padding: var(--spacing-8) var(--spacing-24);
   background: var(--background-surface-primary);

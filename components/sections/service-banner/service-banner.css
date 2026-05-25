@@ -5,7 +5,9 @@
   gap: var(--spacing-12);
   align-items: center;
   justify-content: center;
-  width: 312px;
+  width: 100%;
+  max-width: 312px;
+  margin-inline: auto;
   padding: var(--spacing-16);
   border-radius: var(--radius-medium);
   background: var(--background-surface-primary);
