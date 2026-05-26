@@ -72,3 +72,15 @@
   width: 24px;
   height: 24px;
 }
+
+.ds-diagnostic-summary-item[data-status="warning"] .ds-diagnostic-summary-item__status-icon {
+  color: var(--icon-error);
+}
+
+.ds-diagnostic-summary-item[data-status="success"] .ds-diagnostic-summary-item__status-icon {
+  color: var(--icon-success);
+}
+
+.ds-diagnostic-summary-item[data-status="information"] .ds-diagnostic-summary-item__status-icon {
+  color: var(--icon-information);
+}
