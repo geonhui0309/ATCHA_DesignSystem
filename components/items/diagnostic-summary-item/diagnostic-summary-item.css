@@ -2,9 +2,7 @@
   display: flex;
   align-items: center;
   gap: var(--spacing-12);
-  width: 100%;
-  max-width: 312px;
-  margin-inline: auto;
+  width: 312px;
   min-height: 68px;
   padding: var(--spacing-16) var(--spacing-24);
   box-sizing: border-box;
