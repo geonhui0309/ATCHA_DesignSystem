@@ -117,10 +117,16 @@ export const tokens = {
     "14": "56px",
     "15": "60px",
     "16": "64px",
+    "chip": {
+      "minWidth": "72px"
+    },
     "control": {
       "large": "44px",
       "medium": "40px",
       "small": "32px"
+    },
+    "divider": {
+      "thickness": "1px"
     },
     "icon": {
       "small": "16px",
@@ -182,6 +188,11 @@ export const tokens = {
   "background": {
     "primary": "#ffffff",
     "secondary": "#f7f8fa",
+    "status": {
+      "success": "#e6f7e5",
+      "warning": "#fffde7",
+      "error": "#ffeaed"
+    },
     "surface": {
       "brand": "#3822ff",
       "disabled": "#c7c9ce",

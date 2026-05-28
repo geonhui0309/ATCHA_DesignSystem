@@ -22,6 +22,41 @@
       "$type": "color",
       "$value": "{gray.50}"
     },
+    "status": {
+      "success": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "$type": "color",
+        "$value": "{green.50}"
+      },
+      "warning": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "$type": "color",
+        "$value": "{yellow.50}"
+      },
+      "error": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "$type": "color",
+        "$value": "{red.50}"
+      }
+    },
     "surface": {
       "brand": {
         "$extensions": {

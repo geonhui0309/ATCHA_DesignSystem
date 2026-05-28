@@ -1,5 +1,17 @@
 {
   "size": {
+    "chip": {
+      "minWidth": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "$type": "dimension",
+        "$value": 72
+      }
+    },
     "control": {
       "large": {
         "$extensions": {
@@ -30,6 +42,18 @@
         },
         "$type": "dimension",
         "$value": "{size.8}"
+      }
+    },
+    "divider": {
+      "thickness": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "$type": "dimension",
+        "$value": 1
       }
     }
   }

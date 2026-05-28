@@ -88,9 +88,11 @@
   --size-14: 56px;
   --size-15: 60px;
   --size-16: 64px;
+  --size-chip-min-width: 72px;
   --size-control-large: 44px;
   --size-control-medium: 40px;
   --size-control-small: 32px;
+  --size-divider-thickness: 1px;
   --size-icon-small: 16px;
   --size-icon-medium: 20px;
   --size-icon-large: 24px;
@@ -137,6 +139,9 @@
   --line-height-7: 32px;
   --background-primary: #ffffff;
   --background-secondary: #f7f8fa;
+  --background-status-success: #e6f7e5;
+  --background-status-warning: #fffde7;
+  --background-status-error: #ffeaed;
   --background-surface-brand: #3822ff;
   --background-surface-disabled: #c7c9ce;
   --background-surface-primary: #ffffff;
