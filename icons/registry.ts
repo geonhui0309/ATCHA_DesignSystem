@@ -23,10 +23,7 @@ import homeIcon from "./assets/system/home.svg";
 import inProgressIcon from "./assets/system/in-progress.svg";
 import listIcon from "./assets/system/list.svg";
 import mapIcon from "./assets/system/map.svg";
-import notificationAlertIcon from "./assets/system/notification-alert.svg";
 import notificationCancelIcon from "./assets/system/notification-cancel.svg";
-import notificationCautionIcon from "./assets/system/notification-caution.svg";
-import notificationCheckIcon from "./assets/system/notification-check.svg";
 import notificationOnIcon from "./assets/system/notification-on.svg";
 import oilFilterIcon from "./assets/vehicle/oil-filter.svg";
 import passwordInvisibleIcon from "./assets/system/password-invisible.svg";
@@ -63,9 +60,39 @@ export const iconRegistry: Record<IconName, IconDefinition> = {
   pin: { family: "system", kind: "asset", src: pinIcon },
   "screen-theme": { family: "system", kind: "asset", src: screenThemeIcon },
   map: { family: "system", kind: "asset", src: mapIcon },
-  "notification-alert": { family: "system", kind: "asset", src: notificationAlertIcon },
-  "notification-caution": { family: "system", kind: "asset", src: notificationCautionIcon },
-  "notification-check": { family: "system", kind: "asset", src: notificationCheckIcon },
+  "notification-alert": {
+    family: "system",
+    kind: "inline",
+    viewBox: "0 0 24 24",
+    paths: [
+      {
+        d: "M12 3C7.03 3 3 7.03 3 12C3 16.97 7.03 21 12 21C16.97 21 21 16.97 21 12C21 7.03 16.97 3 12 3ZM13 17.545H11V15.545H13V17.545ZM13 13.73H11L10.7 6.46H13.3L13 13.73Z",
+        fill: "currentColor"
+      }
+    ]
+  },
+  "notification-caution": {
+    family: "system",
+    kind: "inline",
+    viewBox: "0 0 24 24",
+    paths: [
+      {
+        d: "M21.3551 18.375L12.9401 3.80001C12.5251 3.08001 11.4801 3.08001 11.0651 3.80001L2.64507 18.375C2.23007 19.095 2.75007 20 3.58507 20H20.4151C21.2501 20 21.7701 19.095 21.3551 18.375ZM12.8151 17.835H11.1901V16.21H12.8151V17.835ZM12.8151 14.62H11.1901L10.9201 8.66001H13.0851L12.8151 14.62Z",
+        fill: "currentColor"
+      }
+    ]
+  },
+  "notification-check": {
+    family: "system",
+    kind: "inline",
+    viewBox: "0 0 24 24",
+    paths: [
+      {
+        d: "M12 3C7.03 3 3 7.03 3 12C3 16.97 7.03 21 12 21C16.97 21 21 16.97 21 12C21 7.03 16.97 3 12 3ZM11.25 16.06L6.72 11.53L7.78 10.47L11.25 13.94L16.72 8.47L17.78 9.53L11.25 16.06Z",
+        fill: "currentColor"
+      }
+    ]
+  },
   "in-progress": { family: "system", kind: "asset", src: inProgressIcon },
   "notification-cancel": { family: "system", kind: "asset", src: notificationCancelIcon },
   eye: { family: "system", kind: "asset", src: eyeIcon },
