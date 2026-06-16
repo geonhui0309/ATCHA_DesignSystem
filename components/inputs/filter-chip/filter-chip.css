@@ -1,4 +1,5 @@
 .ds-filter-chip {
+  appearance: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -13,6 +14,7 @@
   font-weight: 700;
   line-height: var(--line-height-3);
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .ds-filter-chip[data-selected="true"] {
@@ -33,4 +35,8 @@
   border-color: transparent;
   background: var(--background-surface-disabled);
   color: var(--text-disabled);
+}
+
+.ds-filter-chip:disabled {
+  cursor: not-allowed;
 }

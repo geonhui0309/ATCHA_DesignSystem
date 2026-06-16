@@ -11,22 +11,29 @@ export function FilterChip({
   state = "default",
   className,
   style,
+  disabled,
+  type = "button",
   ...rest
 }: FilterChipProps) {
+  const isDisabled = disabled ?? state === "disabled";
+  const resolvedState = isDisabled ? "disabled" : state;
   const inlineStyle: CSSProperties = {
-    ...getFilterChipStyle(selected, state),
+    ...getFilterChipStyle(selected, resolvedState),
     ...style
   };
 
   return (
-    <span
+    <button
       {...rest}
+      aria-pressed={selected}
       className={cx("ds-filter-chip", className)}
+      disabled={isDisabled}
       data-selected={selected ? "true" : undefined}
-      data-state={state}
+      data-state={resolvedState}
       style={inlineStyle}
+      type={type}
     >
       {label}
-    </span>
+    </button>
   );
 }
